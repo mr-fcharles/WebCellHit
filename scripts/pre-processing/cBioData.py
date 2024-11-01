@@ -1,19 +1,23 @@
+import os
+import json
 import pandas as pd
 import numpy as np
-from cbio_py import cbio_mod as cb
-from tqdm.auto import tqdm
 import argparse
 from pathlib import Path
+from tqdm.auto import tqdm
+from cbio_py import cbio_mod as cb
+
 
 if __name__ == '__main__':
 
     parser = argparse.ArgumentParser()
+    parser.add_argument('--data_path',type=str,default='~/CellHit/data/')
     parser.add_argument('--directory_path', type = str, default = '~/WebCellHit/')
     args = parser.parse_args()
 
     #expand user in the path
     args.directory_path = Path(args.directory_path).expanduser() if '~' in args.directory_path else Path(args.directory_path)
-
+    data_path = Path(os.path.expanduser(args.data_path)) if '~' in args.data_path else Path(args.data_path)
     directory_path = Path(args.directory_path)
     output_path = directory_path / "data" / "metadata" / "tcga_oncotree_data.csv"
 
@@ -119,6 +123,15 @@ if __name__ == '__main__':
     final_df['patient_id'] = final_df['sample_id'].map(sample_to_patient_map)
     final_df['tcga_cancer_acronym'] = final_df['patient_id'].map(id_to_acronym)
     final_df = final_df[['patient_id','sample_id','sample_type','oncotree_code','tcga_cancer_acronym']]
+
+    #read the tissue mapper
+    with open(data_path/'metadata'/'tissueMap.json','r') as f:
+        tissue_mapper = json.load(f)
+
+    #map the tissue types
+    final_df['tissue_type'] = final_df['sample_id'].map(tissue_mapper)
+
+    #save to csv
     final_df.to_csv(output_path, index = False)
     
 
