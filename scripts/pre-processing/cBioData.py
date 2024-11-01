@@ -117,8 +117,8 @@ if __name__ == '__main__':
     final_df['oncotree_code'] = oncotree_codes
     final_df['sample_type'] = sample_types
     final_df['patient_id'] = final_df['sample_id'].map(sample_to_patient_map)
-    final_df['cancer_acronym'] = final_df['patient_id'].map(id_to_acronym)
-    final_df = final_df[['patient_id','sample_id','sample_type','oncotree_code','cancer_acronym']]
+    final_df['tcga_cancer_acronym'] = final_df['patient_id'].map(id_to_acronym)
+    final_df = final_df[['patient_id','sample_id','sample_type','oncotree_code','tcga_cancer_acronym']]
     final_df.to_csv(output_path, index = False)
     
 
