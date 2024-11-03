@@ -1,5 +1,6 @@
 import os
 import re
+import json
 import pickle
 import optuna
 import argparse
@@ -36,13 +37,13 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #expand user in all paths if ~ in path
-    for arg in ['data_path','databases_path']:
+    for arg in ['data_path','database_path']:
         if '~' in args.__dict__[arg]:
             args.__dict__[arg] = args.__dict__[arg].replace('~',os.path.expanduser('~'))
 
     ###--CCLE--###
     data_path = Path(args.data_path)
-    databases_path = Path(args.databases_path)
+    databases_path = Path(args.database_path)
     #check if the data is already saved
     if not (data_path /'transcriptomics' / 'ccle_raw.feather').exists():
 
@@ -89,11 +90,17 @@ if __name__ == '__main__':
     #selected_cell_lines = select_representative_cell_lines(data_path/'metadata/Model.csv',data_path/'transcriptomics/OmicsExpressionProteinCodingGenesTPMLogp1.csv',data_path/'metadata/tissueMap.json')
     selected_cell_lines = pd.read_csv(data_path/'metadata/selected_cell_lines_50.csv',index_col=0)
     
+    #count the number of tissue types
+    #with open(data_path/'metadata/tissueMap.json', 'r') as f:
+    #    tissue_map = json.load(f)
+    #num_tissues = len(set(tissue_map.values()))
+    num_tissues = 21 #TODO: make this dynamic
+    
     #create a optuna sampler
     sampler = optuna.samplers.TPESampler(multivariate=True,n_startup_trials=100)
 
     #create an optuna study
-    study = optuna.create_study(direction='minimize',sampler=sampler,study_name='celligner_optimize',storage=f'sqlite:///{databases_path}/celligner_optimize.db',load_if_exists=True)
+    study = optuna.create_study(directions=[optuna.study.StudyDirection.MINIMIZE for _ in range(num_tissues)],sampler=sampler,study_name='celligner_optimize_revised',storage=f'sqlite:///{databases_path}/celligner_optimize_revised.db',load_if_exists=True)
 
     for i in range(args.n_trials):
 
@@ -152,7 +159,16 @@ if __name__ == '__main__':
             selected_cell_lines=selected_cell_lines,
             tcga_oncotree_path=data_path/'metadata/tcga_oncotree_data.csv',
             tissue_map_path=data_path/'metadata/tissueMap.json',
-            model_metadata_path=data_path/'metadata/Model.csv'
+            model_metadata_path=data_path/'metadata/Model.csv',
+            k=5,
+            return_summary_df=True
         )
 
-        study.tell(trial.number,tissue_distances['mean_distance'].mean())
+        distances = tissue_distances.sort_values(by='tissue')['median'].values #ensure order is always the same
+
+        trial.set_user_attr('median_distance', float(np.mean(distances)))
+
+        mean_distances = tissue_distances.sort_values(by='tissue')['mean_distance'].values #this only for reporting
+        trial.set_user_attr('mean_distance', float(np.mean(mean_distances)))
+
+        study.tell(trial.number,[float(i) for i in distances])

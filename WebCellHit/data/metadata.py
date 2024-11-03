@@ -63,10 +63,10 @@ def calculate_tissue_distances(
             tcga_data = tdf_tcga.values.astype('float32')
             
             index = faiss.IndexFlatL2(ccle_data.shape[1])
-            index.add(tcga_data)
+            index.add(ccle_data)
             
-            k = min(k, len(tcga_data))
-            distances, _ = index.search(ccle_data, k)
+            k = min(k, len(ccle_data))
+            distances, _ = index.search(tcga_data, k)
             tissue_dict[tissue] = distances.ravel()
 
     
