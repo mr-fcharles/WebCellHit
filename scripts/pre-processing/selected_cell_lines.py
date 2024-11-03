@@ -42,14 +42,11 @@ def select_representative_cell_lines(
 
     # Calculate nearest neighbors
     data = ccle_expr.values.astype('float32')
-    norms = np.linalg.norm(data, axis=1)
-    normalized_data = data / norms[:, np.newaxis]
-
     dimension = data.shape[1]
-    index = faiss.IndexFlatIP(dimension)
-    index.add(normalized_data)
+    index = faiss.IndexFlatL2(dimension)
+    index.add(data)
 
-    distances, indices = index.search(normalized_data, k)
+    distances, indices = index.search(data, k)
 
     # Create neighbor dataframe
     neighbor_df = pd.DataFrame(
