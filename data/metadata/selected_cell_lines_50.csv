@@ -1,0 +1,836 @@
+,neighbor_1,neighbor_2,neighbor_3,neighbor_4,neighbor_5,neighbor_6,neighbor_7,neighbor_8,neighbor_9,neighbor_10,original_tissue,matching_percentage
+ACH-001339,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000242,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Pancreas,Bladder/Urinary Tract,80.0
+ACH-000708,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,Bowel,90.0
+ACH-000327,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Ampulla of Vater,Esophagus/Stomach,Lung,70.0
+ACH-000528,Lung,Lung,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,Bladder/Urinary Tract,Uterus,Lung,70.0
+ACH-000167,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001098,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,90.0
+ACH-000570,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000828,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000421,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Pancreas,Bowel,Bowel,Bowel,Bowel,Bowel,80.0
+ACH-000765,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,90.0
+ACH-001375,Pancreas,Cervix,Pancreas,Breast,Pancreas,Bowel,Pancreas,Biliary Tract,Pancreas,Pancreas,Pancreas,60.0
+ACH-000008,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000800,Lung,Lung,Lung,Lung,Lung,Lung,Peripheral Nervous System,Lung,Lung,Bone,Lung,80.0
+ACH-000606,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Bladder/Urinary Tract,Esophagus/Stomach,Head and Neck,60.0
+ACH-000317,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000723,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,80.0
+ACH-000313,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,90.0
+ACH-000728,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000700,Lung,Lung,Lung,CNS/Brain,Breast,Pancreas,Lung,Lung,Pancreas,Lung,Lung,60.0
+ACH-000006,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002029,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Cervix,Head and Neck,Bladder/Urinary Tract,Head and Neck,70.0
+ACH-000754,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000465,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000138,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,Pancreas,Pancreas,Biliary Tract,Pancreas,80.0
+ACH-001547,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Lung,Soft Tissue,Pleura,Pleura,80.0
+ACH-002471,Bone,Bone,Skin,Bone,Bone,CNS/Brain,CNS/Brain,Bone,Breast,Bone,Bone,60.0
+ACH-001409,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Esophagus/Stomach,Bladder/Urinary Tract,Head and Neck,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Bladder/Urinary Tract,70.0
+ACH-001707,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000117,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000999,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000017,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000020,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000587,Lung,Lung,Lung,Breast,Lung,Lung,Lung,Lung,Lung,Head and Neck,Lung,80.0
+ACH-000785,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Lung,Lung,Lung,90.0
+ACH-000554,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001398,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-001332,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Esophagus/Stomach,Head and Neck,70.0
+ACH-000075,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,CNS/Brain,90.0
+ACH-000818,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001616,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000625,Liver,Liver,Liver,Liver,Liver,Liver,Bowel,Liver,Bowel,Liver,Liver,80.0
+ACH-002687,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Skin,Skin,Eye,80.0
+ACH-000376,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000729,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001034,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-001283,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000035,Lung,Ovary/Fallopian Tube,Breast,Lung,Lung,Lung,Lung,Lung,Head and Neck,Bladder/Urinary Tract,Lung,60.0
+ACH-000322,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000552,Bowel,Bowel,Pancreas,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,Bowel,Bowel,80.0
+ACH-000222,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Bowel,Bowel,Ovary/Fallopian Tube,Pancreas,Pancreas,Pancreas,Pancreas,60.0
+ACH-000260,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,CNS/Brain,Peripheral Nervous System,Uterus,Peripheral Nervous System,CNS/Brain,Peripheral Nervous System,70.0
+ACH-000612,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001184,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-001688,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000638,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001846,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Ovary/Fallopian Tube,Biliary Tract,Lung,Ampulla of Vater,Biliary Tract,70.0
+ACH-000798,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000894,Lung,Lung,Lung,Lung,Bowel,Lung,Lung,Ampulla of Vater,Lung,Lung,Lung,80.0
+ACH-001559,Pleura,Pleura,Pleura,Pleura,Pleura,Uterus,Pleura,Bladder/Urinary Tract,Pleura,Lung,Pleura,70.0
+ACH-000034,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000596,Lung,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,Lung,Lung,Lung,90.0
+ACH-000632,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000332,Pancreas,Pancreas,Pancreas,Lung,Pancreas,Lung,Pancreas,Pancreas,Lung,Ampulla of Vater,Pancreas,60.0
+ACH-000179,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-002839,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000368,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000578,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,90.0
+ACH-001611,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Bone,CNS/Brain,CNS/Brain,Soft Tissue,CNS/Brain,80.0
+ACH-000406,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001541,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000998,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000441,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000960,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000098,CNS/Brain,CNS/Brain,Lung,CNS/Brain,Soft Tissue,CNS/Brain,Thyroid,CNS/Brain,Liver,CNS/Brain,CNS/Brain,60.0
+ACH-001651,Cervix,Cervix,Cervix,Cervix,Cervix,Cervix,Breast,Cervix,Cervix,Cervix,Cervix,90.0
+ACH-001456,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000926,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000033,Lung,Lung,Lung,Lung,Uterus,Lung,Lung,Uterus,Lung,Ovary/Fallopian Tube,Lung,70.0
+ACH-000576,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000019,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001577,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000330,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000848,Liver,Liver,Liver,Liver,Liver,Liver,Esophagus/Stomach,Bowel,Liver,Liver,Liver,80.0
+ACH-000481,Lung,Lung,Lung,Bowel,Lung,Ampulla of Vater,Lung,Lung,Lung,Esophagus/Stomach,Lung,70.0
+ACH-001517,Uterus,Uterus,Uterus,Biliary Tract,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,70.0
+ACH-000871,Lung,Lung,Lung,Lung,Lung,Prostate,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-001403,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Skin,Thyroid,Liver,Soft Tissue,Ovary/Fallopian Tube,60.0
+ACH-000805,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-001554,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Skin,Skin,Eye,80.0
+ACH-000832,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000428,Kidney,Kidney,Kidney,Lung,Bladder/Urinary Tract,Kidney,Ovary/Fallopian Tube,Kidney,Kidney,Kidney,Kidney,70.0
+ACH-002981,Esophagus/Stomach,Pancreas,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,60.0
+ACH-001382,Pancreas,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Biliary Tract,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,80.0
+ACH-001302,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001134,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000914,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000725,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000760,CNS/Brain,Bone,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-001745,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000787,Lung,Lung,Liver,Lung,Lung,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,80.0
+ACH-000749,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Peripheral Nervous System,Myeloid,Peripheral Nervous System,Lung,70.0
+ACH-000358,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001520,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000213,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Bowel,Bowel,Pancreas,Pancreas,70.0
+ACH-001610,CNS/Brain,CNS/Brain,Bone,CNS/Brain,CNS/Brain,Head and Neck,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,80.0
+ACH-001408,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Bladder/Urinary Tract,90.0
+ACH-000991,Bowel,Bowel,Ovary/Fallopian Tube,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,90.0
+ACH-000331,Pleura,Pleura,Pleura,Pleura,Pleura,Lung,Bladder/Urinary Tract,Lung,Pleura,Pleura,Pleura,70.0
+ACH-000580,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000594,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000684,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-000868,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000732,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Cervix,Head and Neck,Head and Neck,70.0
+ACH-001481,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Liver,Peripheral Nervous System,CNS/Brain,CNS/Brain,Peripheral Nervous System,70.0
+ACH-000429,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-000310,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000234,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Pleura,Kidney,Kidney,70.0
+ACH-000203,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001441,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Skin,Skin,Eye,80.0
+ACH-000112,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000874,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000672,Lung,Lung,Lung,Bladder/Urinary Tract,Thyroid,Lung,Thyroid,Lung,Lung,Lung,Lung,70.0
+ACH-000380,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001737,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000009,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Liver,Bladder/Urinary Tract,Bowel,Bowel,Bowel,Bowel,70.0
+ACH-001703,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000002,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001568,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000993,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Uterus,60.0
+ACH-002680,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,Bone,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,80.0
+ACH-000877,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001515,Cervix,Cervix,Cervix,Cervix,Cervix,Cervix,Breast,Esophagus/Stomach,Head and Neck,Cervix,Cervix,70.0
+ACH-000702,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000600,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000354,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Lung,Lung,Pancreas,Pancreas,80.0
+ACH-000012,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000459,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,90.0
+ACH-000342,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Ovary/Fallopian Tube,Bowel,Bowel,90.0
+ACH-000208,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000360,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000249,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000231,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000945,Lung,Lung,Lung,Lung,Lung,Lung,Soft Tissue,Lung,Pancreas,Soft Tissue,Lung,70.0
+ACH-002458,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-001378,Pancreas,Pancreas,Biliary Tract,Pancreas,Pancreas,Pancreas,Pancreas,Biliary Tract,Pancreas,Pancreas,Pancreas,80.0
+ACH-001029,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000248,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-002951,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Ovary/Fallopian Tube,Breast,90.0
+ACH-000751,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001696,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Cervix,Head and Neck,90.0
+ACH-001016,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000282,Lung,Lung,Lung,Lung,Lung,Lung,CNS/Brain,Head and Neck,Breast,Lung,Lung,70.0
+ACH-000262,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000722,Bowel,Biliary Tract,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,90.0
+ACH-001129,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000329,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001569,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000814,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001701,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Cervix,Skin,Head and Neck,Head and Neck,80.0
+ACH-000197,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000124,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001626,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,90.0
+ACH-000619,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Esophagus/Stomach,Head and Neck,Esophagus/Stomach,Head and Neck,70.0
+ACH-001973,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,90.0
+ACH-001340,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,100.0
+ACH-000546,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Esophagus/Stomach,Head and Neck,Head and Neck,70.0
+ACH-001709,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-002018,Eye,Eye,Eye,Eye,Skin,Eye,Skin,Eye,Skin,Skin,Eye,60.0
+ACH-000116,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,70.0
+ACH-000815,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001561,Pleura,Pleura,Pleura,Pleura,Pleura,Skin,Pleura,Pleura,Pleura,Pleura,Pleura,90.0
+ACH-000842,Bowel,Bowel,Bowel,Bowel,Bowel,Pancreas,Biliary Tract,Bowel,Pancreas,Bowel,Bowel,70.0
+ACH-001415,Bladder/Urinary Tract,Bowel,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Breast,Pancreas,Bladder/Urinary Tract,Bladder/Urinary Tract,60.0
+ACH-000681,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Biliary Tract,Lung,Lung,90.0
+ACH-000070,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000484,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000108,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Lung,Ovary/Fallopian Tube,Pancreas,60.0
+ACH-000656,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000166,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000997,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Bowel,Bowel,90.0
+ACH-000819,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Lung,CNS/Brain,90.0
+ACH-000087,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-002005,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000196,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Ovary/Fallopian Tube,Uterus,Breast,Breast,80.0
+ACH-000076,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000509,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,80.0
+ACH-001193,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000571,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000391,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000532,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000584,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,70.0
+ACH-001690,Head and Neck,Skin,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Biliary Tract,Head and Neck,60.0
+ACH-000586,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000944,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000394,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000954,Uterus,Uterus,Uterus,Uterus,Uterus,Bowel,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,60.0
+ACH-000204,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000989,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Bowel,90.0
+ACH-001347,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Prostate,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,90.0
+ACH-000691,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Uterus,Breast,90.0
+ACH-000379,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Bowel,Lung,Lung,Lung,80.0
+ACH-000714,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000937,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000763,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000326,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000816,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Peripheral Nervous System,Lung,Uterus,Lung,80.0
+ACH-000641,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002077,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000583,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000836,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Pancreas,Head and Neck,80.0
+ACH-000975,Lung,Lung,Lung,Pleura,CNS/Brain,Lung,Breast,Lung,Uterus,Lung,Lung,60.0
+ACH-000109,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Bowel,Lung,90.0
+ACH-000467,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000712,Lung,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-000671,Liver,Bowel,Bowel,Liver,Liver,Bowel,Liver,Esophagus/Stomach,Liver,Liver,Liver,60.0
+ACH-000523,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-002738,Pancreas,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,60.0
+ACH-000136,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000440,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001461,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-001692,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000027,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000562,Lung,Lung,Lung,Lung,Pancreas,Pancreas,Lung,Pancreas,Lung,Lung,Lung,70.0
+ACH-001669,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000834,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Esophagus/Stomach,Pancreas,Head and Neck,Bladder/Urinary Tract,60.0
+ACH-000565,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Ovary/Fallopian Tube,Bowel,Bowel,Pancreas,Bowel,80.0
+ACH-000449,Uterus,Ovary/Fallopian Tube,Kidney,Uterus,Uterus,Uterus,Uterus,Kidney,Uterus,Bowel,Uterus,60.0
+ACH-000399,Lung,Lung,Prostate,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-002080,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000770,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000710,Bowel,Lung,Bowel,Lung,Ovary/Fallopian Tube,Esophagus/Stomach,Bowel,Bowel,Bowel,Bowel,Bowel,60.0
+ACH-000066,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000334,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000519,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-002003,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-002461,Skin,Skin,Soft Tissue,Skin,Skin,Skin,Skin,Bone,Skin,Bowel,Skin,70.0
+ACH-000646,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Liver,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,60.0
+ACH-000314,Lung,Lung,Lung,CNS/Brain,Lung,Lung,Lung,Lung,Lung,Bladder/Urinary Tract,Lung,80.0
+ACH-000040,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-001057,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,90.0
+ACH-001041,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001977,Pleura,Pleura,Pleura,Lung,Bone,Pleura,Uterus,Pleura,Lung,Pleura,Pleura,60.0
+ACH-000370,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001630,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Cervix,Ovary/Fallopian Tube,Pancreas,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,80.0
+ACH-000437,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000498,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001392,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000503,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Esophagus/Stomach,Head and Neck,70.0
+ACH-000328,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000403,Bowel,Bowel,Pancreas,Bowel,Esophagus/Stomach,Pancreas,Pancreas,Bowel,Bowel,Bowel,Bowel,60.0
+ACH-000400,Bowel,Bowel,Biliary Tract,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Bowel,Bowel,80.0
+ACH-001430,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000893,Lung,Lung,Lung,Lung,Liver,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-000889,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000799,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-001623,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,Soft Tissue,CNS/Brain,CNS/Brain,CNS/Brain,Peripheral Nervous System,CNS/Brain,70.0
+ACH-000736,Esophagus/Stomach,Esophagus/Stomach,Esophagus/Stomach,Esophagus/Stomach,Bowel,Pancreas,Bowel,Bowel,Esophagus/Stomach,Esophagus/Stomach,Esophagus/Stomach,60.0
+ACH-000876,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001232,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-001618,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000235,Pancreas,Esophagus/Stomach,Pancreas,Bowel,Pancreas,Ampulla of Vater,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,60.0
+ACH-000381,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Ovary/Fallopian Tube,Bowel,Bowel,Bowel,Bowel,80.0
+ACH-001993,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001301,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000854,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000187,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000543,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000569,Pleura,Pleura,Pleura,Pleura,Pleura,Lung,Pleura,Bladder/Urinary Tract,Pleura,Pleura,Pleura,80.0
+ACH-000924,Lung,Lung,Lung,Cervix,Lung,Lung,Bladder/Urinary Tract,Lung,Pleura,Lung,Lung,70.0
+ACH-001450,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000713,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Lung,Esophagus/Stomach,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Cervix,Ovary/Fallopian Tube,70.0
+ACH-001360,Cervix,Cervix,Cervix,Cervix,Cervix,Esophagus/Stomach,Head and Neck,Cervix,Lung,Lung,Cervix,60.0
+ACH-000273,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001617,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000639,Lung,Lung,Lung,Lung,Lung,Uterus,Lung,Lung,Bowel,Lung,Lung,80.0
+ACH-000590,Lung,Lung,Lung,Ampulla of Vater,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,80.0
+ACH-000553,Lung,Lung,Lung,Lung,Pancreas,Lung,Pancreas,Pancreas,Lung,Lung,Lung,70.0
+ACH-000084,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001396,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000339,Lung,Breast,Lung,Lung,Bladder/Urinary Tract,Lung,Bladder/Urinary Tract,Thyroid,Lung,Lung,Lung,60.0
+ACH-002048,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000218,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000789,Lung,Lung,Lung,Lung,Esophagus/Stomach,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-000215,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001132,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000032,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000439,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000024,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000599,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,Pancreas,Pancreas,80.0
+ACH-000263,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002511,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000286,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000250,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000139,Pancreas,Bowel,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,80.0
+ACH-001735,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001183,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Esophagus/Stomach,Bladder/Urinary Tract,80.0
+ACH-000551,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000744,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,Lung,Lung,90.0
+ACH-002968,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,60.0
+ACH-000336,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001557,Pleura,Pleura,Pleura,Pleura,Pleura,Biliary Tract,Lung,Pleura,Thyroid,Pleura,Pleura,70.0
+ACH-000525,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001148,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000853,Lung,Lung,Lung,Soft Tissue,Lung,Uterus,Lung,Bowel,Pancreas,Lung,Lung,60.0
+ACH-000479,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000955,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000675,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000193,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001990,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Eye,Skin,Skin,Skin,90.0
+ACH-001647,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002043,Head and Neck,Skin,Head and Neck,Skin,Head and Neck,Head and Neck,Skin,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,60.0
+ACH-000270,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Esophagus/Stomach,Pancreas,80.0
+ACH-002017,Eye,Eye,Eye,Eye,Eye,Skin,Eye,Eye,Skin,Skin,Eye,70.0
+ACH-000655,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Bladder/Urinary Tract,CNS/Brain,Bone,CNS/Brain,80.0
+ACH-000188,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000146,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000415,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,100.0
+ACH-001518,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,70.0
+ACH-000891,Lung,Lung,Lung,CNS/Brain,Lung,Lung,Lung,Lung,Bladder/Urinary Tract,Bladder/Urinary Tract,Lung,70.0
+ACH-001625,Head and Neck,Head and Neck,Skin,Bladder/Urinary Tract,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,70.0
+ACH-000895,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000851,Lung,Lung,Lung,Lung,Lung,Biliary Tract,Lung,Lung,Lung,Esophagus/Stomach,Lung,80.0
+ACH-000506,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000061,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000568,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000707,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000603,Lung,Lung,Lung,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-000983,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000541,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000680,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,90.0
+ACH-002460,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000111,Breast,Breast,Breast,Breast,Ovary/Fallopian Tube,Lung,Breast,Breast,Breast,Ovary/Fallopian Tube,Breast,70.0
+ACH-000369,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000618,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Esophagus/Stomach,Bladder/Urinary Tract,Head and Neck,60.0
+ACH-000470,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000118,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Lung,Pancreas,Pancreas,Lung,Lung,Pancreas,70.0
+ACH-000614,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-001338,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001386,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000014,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000455,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000389,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000129,Lung,Lung,Lung,Lung,Esophagus/Stomach,Lung,Lung,Lung,Peripheral Nervous System,Bone,Lung,70.0
+ACH-002042,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Bladder/Urinary Tract,Lung,Head and Neck,Head and Neck,70.0
+ACH-000756,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Peripheral Nervous System,Head and Neck,Lung,CNS/Brain,60.0
+ACH-000089,Bowel,Bowel,Bowel,Bowel,Ovary/Fallopian Tube,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,90.0
+ACH-000371,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000132,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Lung,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Pancreas,Biliary Tract,Ovary/Fallopian Tube,70.0
+ACH-001100,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000238,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,80.0
+ACH-000623,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000056,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000514,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000988,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,80.0
+ACH-000065,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000609,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000504,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000414,Lung,Lung,Lung,Lung,Lung,Biliary Tract,Lung,Lung,Lung,Ampulla of Vater,Lung,80.0
+ACH-000472,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Skin,Lung,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,60.0
+ACH-000007,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,Bowel,90.0
+ACH-000386,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000755,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000028,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000665,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Lung,CNS/Brain,Lung,80.0
+ACH-000078,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000397,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Liver,Lung,Uterus,Uterus,60.0
+ACH-000518,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,90.0
+ACH-001566,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,90.0
+ACH-000252,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000572,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001605,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Bone,CNS/Brain,CNS/Brain,90.0
+ACH-000277,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001239,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000786,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000803,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Prostate,Lung,90.0
+ACH-001970,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Eye,Skin,Skin,90.0
+ACH-000537,Liver,Liver,Liver,Liver,Biliary Tract,Liver,Biliary Tract,Liver,Liver,Liver,Liver,80.0
+ACH-000419,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001549,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000706,Lung,Lung,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Cervix,Lung,Ovary/Fallopian Tube,Lung,70.0
+ACH-000737,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,Thyroid,Lung,Lung,Lung,80.0
+ACH-000548,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,100.0
+ACH-001573,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000425,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000735,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Skin,Head and Neck,Head and Neck,Head and Neck,Lung,Head and Neck,70.0
+ACH-000654,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000404,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000882,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001509,Head and Neck,Head and Neck,Prostate,Head and Neck,Head and Neck,Head and Neck,Skin,Prostate,Head and Neck,Head and Neck,Head and Neck,70.0
+ACH-000210,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000254,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,100.0
+ACH-000604,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000195,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002084,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000004,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000241,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001194,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-002055,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000405,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000821,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001677,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000951,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Ovary/Fallopian Tube,Lung,Breast,Lung,70.0
+ACH-001036,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001986,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001147,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000162,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001751,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000003,Bowel,Bowel,Bowel,Bowel,Bowel,Liver,Ampulla of Vater,Bowel,Bowel,Bladder/Urinary Tract,Bowel,70.0
+ACH-000669,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000950,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Pancreas,Bowel,90.0
+ACH-000050,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001106,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-002051,Lung,Cervix,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-002745,Pancreas,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Pancreas,Pancreas,Pancreas,60.0
+ACH-000367,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Lung,Pleura,Thyroid,Pleura,Pleura,80.0
+ACH-000589,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Biliary Tract,Lung,90.0
+ACH-000564,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001522,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,90.0
+ACH-000424,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,CNS/Brain,Bone,90.0
+ACH-000409,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,100.0
+ACH-000512,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000232,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000820,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000806,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000645,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Lung,Pleura,CNS/Brain,CNS/Brain,Pleura,70.0
+ACH-000099,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000902,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000649,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000227,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000697,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000942,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000093,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Pancreas,Lung,Pancreas,Pancreas,Pancreas,80.0
+ACH-000100,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000060,Pancreas,Pancreas,Bowel,Esophagus/Stomach,Lung,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,60.0
+ACH-000001,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,80.0
+ACH-000957,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000650,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001096,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000762,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000922,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000990,Uterus,Uterus,Uterus,Uterus,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Biliary Tract,Uterus,Uterus,80.0
+ACH-000927,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000918,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000974,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,Uterus,Uterus,80.0
+ACH-000297,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001719,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Kidney,Ovary/Fallopian Tube,70.0
+ACH-001418,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,90.0
+ACH-000362,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000840,Lung,Uterus,Lung,Bladder/Urinary Tract,Lung,Breast,Head and Neck,Lung,Lung,Lung,Lung,60.0
+ACH-001656,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000016,Kidney,Kidney,Bladder/Urinary Tract,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,80.0
+ACH-001460,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000592,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001192,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000045,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000912,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,Uterus,Pancreas,Bladder/Urinary Tract,Lung,60.0
+ACH-000508,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000577,Liver,Liver,Liver,Lung,Liver,CNS/Brain,Liver,Liver,Lung,Kidney,Liver,60.0
+ACH-000636,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000667,Lung,Lung,Breast,Lung,Lung,Lung,Breast,Lung,Lung,Lung,Lung,80.0
+ACH-000387,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002510,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,90.0
+ACH-001303,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000838,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001172,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Skin,Lung,CNS/Brain,CNS/Brain,80.0
+ACH-000822,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000349,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000279,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000812,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001300,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000524,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,100.0
+ACH-000611,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000411,Kidney,Pleura,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,80.0
+ACH-000718,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000433,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Biliary Tract,Kidney,90.0
+ACH-000499,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-001736,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001379,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Biliary Tract,Pancreas,Biliary Tract,Pancreas,Pancreas,Pancreas,80.0
+ACH-000128,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000041,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-002743,Pancreas,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,Esophagus/Stomach,Esophagus/Stomach,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,60.0
+ACH-000747,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,Lung,Bladder/Urinary Tract,Bladder/Urinary Tract,Lung,70.0
+ACH-000341,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001740,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000417,Pancreas,Esophagus/Stomach,Pancreas,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Bowel,Pancreas,Pancreas,70.0
+ACH-001393,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000120,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,60.0
+ACH-001694,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Biliary Tract,Head and Neck,Head and Neck,80.0
+ACH-002509,Skin,Skin,Skin,Skin,Skin,Skin,Peripheral Nervous System,Skin,Skin,Skin,Skin,90.0
+ACH-000438,Lung,Ampulla of Vater,Lung,Cervix,Pancreas,Lung,Lung,Lung,Lung,Pancreas,Lung,60.0
+ACH-001366,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000653,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000673,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Head and Neck,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,CNS/Brain,CNS/Brain,80.0
+ACH-000069,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000323,CNS/Brain,Head and Neck,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000021,Lung,Lung,Lung,Ovary/Fallopian Tube,CNS/Brain,Ovary/Fallopian Tube,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,60.0
+ACH-000980,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000106,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000734,Liver,Liver,Liver,Liver,Liver,Liver,Bowel,Bowel,Liver,Pancreas,Liver,70.0
+ACH-000845,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-001982,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000730,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000698,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Prostate,Lung,Lung,90.0
+ACH-001699,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Skin,Biliary Tract,Head and Neck,Head and Neck,70.0
+ACH-000963,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-001567,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000661,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001190,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-002885,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000783,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000301,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-002459,Skin,Skin,Skin,Skin,Skin,Skin,Soft Tissue,Skin,CNS/Brain,CNS/Brain,Skin,70.0
+ACH-001354,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001645,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000304,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,90.0
+ACH-002069,Bone,Bone,Bone,Bone,Bone,Skin,Soft Tissue,CNS/Brain,Bone,Skin,Bone,60.0
+ACH-000931,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,90.0
+ACH-000072,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000171,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Pleura,Kidney,Kidney,Kidney,Kidney,80.0
+ACH-001188,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000372,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000804,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000733,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001603,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000829,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000810,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000738,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000780,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001548,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000759,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-001555,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,100.0
+ACH-000969,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Pancreas,Bowel,Bowel,90.0
+ACH-002654,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Pancreas,Bowel,90.0
+ACH-000921,Lung,Soft Tissue,Lung,CNS/Brain,Lung,Lung,Lung,Thyroid,CNS/Brain,Lung,Lung,60.0
+ACH-001373,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,80.0
+ACH-001022,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000790,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,Lung,90.0
+ACH-000602,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000156,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-002001,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000315,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-002026,Uterus,Uterus,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,70.0
+ACH-000883,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000482,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Bowel,Lung,90.0
+ACH-000450,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-002672,Pancreas,Pancreas,Pancreas,Ampulla of Vater,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,90.0
+ACH-000715,Head and Neck,Head and Neck,Cervix,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Skin,Skin,Head and Neck,Head and Neck,60.0
+ACH-000870,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000910,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000140,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001196,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-001484,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000423,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000290,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000492,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000102,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Uterus,CNS/Brain,90.0
+ACH-000817,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001556,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Skin,Pleura,Skin,Pleura,80.0
+ACH-000964,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000378,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Lung,Biliary Tract,Lung,Lung,80.0
+ACH-000575,Lung,Breast,Lung,Lung,Lung,Thyroid,Lung,Bladder/Urinary Tract,Lung,Lung,Lung,70.0
+ACH-000634,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001322,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Pancreas,Uterus,Soft Tissue,Lung,Bladder/Urinary Tract,Soft Tissue,Soft Tissue,60.0
+ACH-000767,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000879,Uterus,Uterus,Uterus,Uterus,Bladder/Urinary Tract,Uterus,Uterus,Lung,Breast,Pancreas,Uterus,60.0
+ACH-001032,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000982,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-001636,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000189,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000660,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001197,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000915,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000480,Liver,Liver,Liver,Liver,Esophagus/Stomach,Liver,Liver,Bowel,Liver,Liver,Liver,80.0
+ACH-000745,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001459,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000916,Lung,Bowel,Lung,Lung,Biliary Tract,Breast,Lung,Pancreas,Lung,Lung,Lung,60.0
+ACH-001609,CNS/Brain,Bone,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000295,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001485,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000292,Lung,Lung,Soft Tissue,Lung,Adrenal Gland,Lung,Lung,Ovary/Fallopian Tube,Bowel,Lung,Lung,60.0
+ACH-000137,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Skin,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000445,CNS/Brain,CNS/Brain,CNS/Brain,Bone,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Lung,CNS/Brain,CNS/Brain,80.0
+ACH-001229,Head and Neck,Head and Neck,Skin,Biliary Tract,Head and Neck,Head and Neck,Skin,Head and Neck,Biliary Tract,Head and Neck,Head and Neck,60.0
+ACH-000837,Lung,CNS/Brain,Lung,Pancreas,Lung,Lung,Lung,Head and Neck,Lung,Pancreas,Lung,60.0
+ACH-000463,Lung,Lung,Cervix,Lung,Lung,Lung,Lung,Lung,Pleura,Lung,Lung,80.0
+ACH-000881,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,90.0
+ACH-000388,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000147,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000899,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000366,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001526,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Skin,Bone,Bone,Bone,90.0
+ACH-001329,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001280,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Peripheral Nervous System,Bone,Ovary/Fallopian Tube,Skin,Soft Tissue,Soft Tissue,60.0
+ACH-002922,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000692,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Lung,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,70.0
+ACH-000107,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,Pancreas,Bowel,Pancreas,Pancreas,80.0
+ACH-000651,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,90.0
+ACH-000563,Lung,Pancreas,Lung,Pancreas,Pancreas,Lung,Lung,Lung,Lung,Lung,Lung,70.0
+ACH-000345,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000316,Liver,Liver,Liver,Liver,Lung,Liver,CNS/Brain,Liver,Liver,CNS/Brain,Liver,70.0
+ACH-000884,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000473,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Esophagus/Stomach,Bladder/Urinary Tract,Bladder/Urinary Tract,80.0
+ACH-001624,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000635,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,90.0
+ACH-000923,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000687,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000044,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000740,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000447,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000101,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001416,Bladder/Urinary Tract,Bladder/Urinary Tract,Bowel,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Pancreas,Bladder/Urinary Tract,Pancreas,Bladder/Urinary Tract,Bladder/Urinary Tract,60.0
+ACH-000198,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000104,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001835,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Lung,Biliary Tract,Pancreas,Pancreas,Pancreas,Biliary Tract,60.0
+ACH-000892,Lung,Lung,Lung,Lung,Bladder/Urinary Tract,CNS/Brain,Lung,Lung,CNS/Brain,CNS/Brain,Lung,60.0
+ACH-000042,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,Pancreas,Pancreas,Pancreas,90.0
+ACH-000477,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000457,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Ovary/Fallopian Tube,Kidney,Kidney,Kidney,Kidney,80.0
+ACH-000904,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000244,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000610,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000081,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001038,Bone,Bone,Bone,Bone,Bone,Bone,CNS/Brain,Bone,Bone,Bone,Bone,90.0
+ACH-000352,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000416,Lung,Pleura,Lung,Lung,Lung,Cervix,Lung,Lung,Bone,Lung,Lung,70.0
+ACH-000862,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Head and Neck,Esophagus/Stomach,Bladder/Urinary Tract,Bladder/Urinary Tract,Head and Neck,Lung,Bladder/Urinary Tract,60.0
+ACH-000236,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000401,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000731,Lung,Breast,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,Lung,Lung,Lung,80.0
+ACH-000875,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000626,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000159,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000907,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-000103,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,90.0
+ACH-000739,Liver,Liver,Liver,Liver,Liver,Liver,Esophagus/Stomach,Liver,Bowel,Bowel,Liver,70.0
+ACH-001558,Pleura,Pleura,Pleura,Pleura,Soft Tissue,Pleura,Pleura,Pleura,Skin,Biliary Tract,Pleura,70.0
+ACH-000206,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000841,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000615,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-001613,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001608,CNS/Brain,CNS/Brain,Thyroid,Bone,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,80.0
+ACH-000801,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000464,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000622,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000365,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001431,Bone,Bone,Bone,Bone,Bone,Bone,Bone,CNS/Brain,Bone,Bone,Bone,90.0
+ACH-000475,Liver,Liver,Liver,Lung,Liver,Lung,Liver,Liver,Liver,Biliary Tract,Liver,70.0
+ACH-000860,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000074,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001562,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,100.0
+ACH-000259,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-002025,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-001345,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000558,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000631,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Soft Tissue,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-000995,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000373,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000953,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000709,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-002059,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000929,Lung,Lung,Lung,Lung,Ampulla of Vater,Lung,Lung,Lung,Lung,Esophagus/Stomach,Lung,80.0
+ACH-001395,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000981,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000617,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,80.0
+ACH-000311,Lung,Lung,Biliary Tract,Ampulla of Vater,Lung,Lung,Lung,Lung,Lung,Pancreas,Lung,70.0
+ACH-001834,Biliary Tract,Biliary Tract,Biliary Tract,Biliary Tract,Pancreas,Kidney,Ovary/Fallopian Tube,Biliary Tract,Biliary Tract,Lung,Biliary Tract,60.0
+ACH-001061,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000077,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,90.0
+ACH-000496,Lung,Lung,Lung,Lung,Lung,Lung,Head and Neck,Thyroid,Lung,Lung,Lung,80.0
+ACH-002512,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000062,Lung,Lung,Lung,Lung,Liver,Head and Neck,Lung,CNS/Brain,Lung,Lung,Lung,70.0
+ACH-002884,Breast,Breast,Breast,Breast,Esophagus/Stomach,Breast,Breast,Breast,Esophagus/Stomach,Breast,Breast,80.0
+ACH-002004,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000878,Lung,Lung,Lung,Lung,Lung,Lung,Breast,Lung,Lung,Lung,Lung,90.0
+ACH-002061,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000385,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,90.0
+ACH-000938,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000515,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000863,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000220,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000827,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,CNS/Brain,CNS/Brain,Skin,70.0
+ACH-000961,Uterus,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Breast,Uterus,Uterus,Uterus,60.0
+ACH-000778,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Lung,Head and Neck,80.0
+ACH-000825,Lung,Breast,Lung,Pancreas,Lung,Lung,Biliary Tract,Lung,Lung,Kidney,Lung,60.0
+ACH-000743,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001819,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000157,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001786,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000253,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,80.0
+ACH-001376,Pancreas,Biliary Tract,Pancreas,Pancreas,Biliary Tract,Pancreas,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Pancreas,70.0
+ACH-000958,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Bowel,90.0
+ACH-000228,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,90.0
+ACH-000266,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,Pancreas,Pancreas,Pancreas,Lung,Pancreas,80.0
+ACH-000245,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000168,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000257,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000211,CNS/Brain,CNS/Brain,CNS/Brain,Thyroid,CNS/Brain,Lung,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,80.0
+ACH-000987,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,90.0
+ACH-000682,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,80.0
+ACH-000073,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001999,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Biliary Tract,Pancreas,Pancreas,Biliary Tract,Pancreas,Pancreas,80.0
+ACH-000776,CNS/Brain,CNS/Brain,CNS/Brain,Head and Neck,CNS/Brain,Lung,CNS/Brain,CNS/Brain,Head and Neck,Lung,CNS/Brain,60.0
+ACH-000521,Lung,Lung,Lung,Lung,Lung,Lung,Ovary/Fallopian Tube,Lung,Lung,Pancreas,Lung,80.0
+ACH-000299,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000591,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-001716,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000833,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,CNS/Brain,Bone,Soft Tissue,Soft Tissue,80.0
+ACH-000274,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000029,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Pancreas,Pancreas,Lung,80.0
+ACH-000644,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000588,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000849,Breast,Breast,Breast,Breast,Breast,Lung,Lung,Breast,Lung,Breast,Breast,70.0
+ACH-000219,Skin,Skin,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,90.0
+ACH-000150,Lung,Lung,Bowel,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,90.0
+ACH-000384,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Bladder/Urinary Tract,Lung,Head and Neck,Bladder/Urinary Tract,80.0
+ACH-002014,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Skin,Skin,Eye,Eye,80.0
+ACH-001634,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,90.0
+ACH-002531,Lung,Bowel,Pancreas,Lung,Lung,Lung,Biliary Tract,Lung,Lung,Lung,Lung,70.0
+ACH-000495,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000013,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,70.0
+ACH-001765,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000312,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000436,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000267,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000489,Bowel,Bowel,Bowel,Ovary/Fallopian Tube,Biliary Tract,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,80.0
+ACH-000431,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000152,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Bone,Soft Tissue,CNS/Brain,80.0
+ACH-000534,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000582,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000443,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Lung,Ovary/Fallopian Tube,Uterus,Breast,Ovary/Fallopian Tube,70.0
+ACH-001570,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-000986,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Biliary Tract,Bowel,Bowel,90.0
+ACH-000151,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001277,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Ovary/Fallopian Tube,Soft Tissue,Soft Tissue,Skin,Peripheral Nervous System,Soft Tissue,Soft Tissue,70.0
+ACH-000703,Lung,Lung,Lung,Lung,Lung,Lung,Prostate,Lung,Lung,Lung,Lung,90.0
+ACH-001511,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,90.0
+ACH-000113,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000337,Lung,Lung,Lung,Lung,Lung,Lung,Bowel,Lung,Lung,Lung,Lung,90.0
+ACH-000598,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000057,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000281,Pancreas,Pancreas,Pancreas,Bladder/Urinary Tract,Lung,Pancreas,Pancreas,Pancreas,Pancreas,Bowel,Pancreas,70.0
+ACH-000321,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000985,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Pancreas,Bowel,Bowel,90.0
+ACH-001399,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-001097,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-001030,Bone,Bone,Bone,Bone,Bone,Bone,Bone,CNS/Brain,Bone,Bone,Bone,90.0
+ACH-002485,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000298,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000771,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Prostate,Head and Neck,Head and Neck,80.0
+ACH-000363,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000350,Bowel,Bowel,Bowel,Bowel,Bowel,Esophagus/Stomach,Bladder/Urinary Tract,Bowel,Pancreas,Bowel,Bowel,70.0
+ACH-001543,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,80.0
+ACH-000346,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000970,Bowel,Bowel,Bowel,Esophagus/Stomach,Bowel,Pancreas,Pancreas,Pancreas,Bowel,Bowel,Bowel,60.0
+ACH-000794,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,90.0
+ACH-000039,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000471,Liver,Liver,Liver,Pancreas,Liver,Liver,Lung,Liver,Kidney,Lung,Liver,60.0
+ACH-001458,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000886,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000888,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000659,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000271,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000549,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,Head and Neck,Skin,Head and Neck,80.0
+ACH-000555,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,Kidney,100.0
+ACH-000775,Lung,Lung,Lung,Lung,Esophagus/Stomach,Lung,Bowel,Pancreas,Pancreas,Lung,Lung,60.0
+ACH-000038,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000559,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000510,Lung,Lung,Lung,Lung,Pancreas,Lung,Bladder/Urinary Tract,Bladder/Urinary Tract,Pancreas,Lung,Lung,60.0
+ACH-002659,Bowel,Bowel,Pancreas,Bowel,Bowel,Esophagus/Stomach,Esophagus/Stomach,Bowel,Pancreas,Bowel,Bowel,60.0
+ACH-000844,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000272,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-001035,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
+ACH-000513,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Kidney,90.0
+ACH-000959,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,Bowel,100.0
+ACH-000169,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Peripheral Nervous System,Soft Tissue,CNS/Brain,Soft Tissue,Soft Tissue,80.0
+ACH-000067,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000640,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001674,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-001698,Head and Neck,Esophagus/Stomach,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Bladder/Urinary Tract,Head and Neck,70.0
+ACH-002011,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Eye,Skin,Skin,Eye,80.0
+ACH-000469,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Skin,CNS/Brain,90.0
+ACH-001353,Pancreas,Pancreas,Pancreas,Biliary Tract,Biliary Tract,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,Pancreas,80.0
+ACH-001574,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000097,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,Breast,100.0
+ACH-000256,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,90.0
+ACH-000972,Uterus,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Ovary/Fallopian Tube,Bowel,Ovary/Fallopian Tube,Uterus,Uterus,Uterus,60.0
+ACH-001367,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,Peripheral Nervous System,100.0
+ACH-000382,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000579,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-002035,Lung,Ovary/Fallopian Tube,Lung,Lung,Lung,Lung,Pancreas,Lung,Lung,CNS/Brain,Lung,70.0
+ACH-000695,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-001510,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Head and Neck,Breast,Cervix,Cervix,Head and Neck,60.0
+ACH-000502,Pancreas,Pancreas,Pancreas,Ovary/Fallopian Tube,Pancreas,Lung,Esophagus/Stomach,Pancreas,Pancreas,Lung,Pancreas,60.0
+ACH-000183,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000788,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,Skin,100.0
+ACH-001622,CNS/Brain,Uterus,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,Thyroid,CNS/Brain,CNS/Brain,CNS/Brain,80.0
+ACH-001560,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Pleura,Skin,Soft Tissue,Pleura,Pleura,80.0
+ACH-000005,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001687,Kidney,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Thyroid,Kidney,Kidney,80.0
+ACH-000126,CNS/Brain,CNS/Brain,Skin,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,90.0
+ACH-001685,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,90.0
+ACH-000068,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000487,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000122,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000782,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-001632,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Pancreas,Ovary/Fallopian Tube,Lung,Cervix,Cervix,Ovary/Fallopian Tube,60.0
+ACH-000357,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000453,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000791,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000567,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000105,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000557,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-001346,Head and Neck,Prostate,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Skin,Head and Neck,Prostate,Head and Neck,70.0
+ACH-000900,Lung,Lung,Pancreas,Lung,Lung,Lung,Lung,Pancreas,Lung,Bladder/Urinary Tract,Lung,70.0
+ACH-000666,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000872,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000181,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Head and Neck,Prostate,Head and Neck,Head and Neck,Prostate,Head and Neck,Head and Neck,80.0
+ACH-000130,Lymphoid,Lymphoid,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000121,Lung,Lung,Pancreas,Pancreas,Ovary/Fallopian Tube,Lung,Lung,Pancreas,Lung,Lung,Lung,60.0
+ACH-000934,Breast,Breast,Breast,Breast,Breast,Breast,Lung,Breast,Breast,Breast,Breast,90.0
+ACH-000996,Uterus,Uterus,Ovary/Fallopian Tube,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,Uterus,Ovary/Fallopian Tube,Uterus,60.0
+ACH-001743,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,Soft Tissue,100.0
+ACH-000781,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000059,Lymphoid,Myeloid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,90.0
+ACH-000294,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,Myeloid,100.0
+ACH-000200,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000046,Kidney,Kidney,Kidney,Kidney,Bladder/Urinary Tract,Kidney,Kidney,Kidney,Kidney,Ovary/Fallopian Tube,Kidney,80.0
+ACH-000968,Skin,Skin,Skin,Skin,Skin,CNS/Brain,Skin,Skin,Skin,Skin,Skin,90.0
+ACH-000830,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,Lung,100.0
+ACH-000114,Pancreas,Pancreas,Pancreas,Pancreas,Esophagus/Stomach,Lung,Pancreas,Pancreas,Lung,Lung,Pancreas,60.0
+ACH-000402,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000036,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,CNS/Brain,100.0
+ACH-000285,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,Lymphoid,100.0
+ACH-000052,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,Bone,100.0
