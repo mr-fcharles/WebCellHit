@@ -9,7 +9,8 @@ def calculate_tissue_distances(
     tcga_oncotree_path: str,
     tissue_map_path: str,
     model_metadata_path: str,
-    k: int = 10
+    k: int = 10,
+    return_summary_df: bool = True
 ) -> pd.DataFrame:
     """
     Calculate tissue-wise distances between selected CCLE and TCGA samples.
@@ -68,28 +69,34 @@ def calculate_tissue_distances(
             distances, _ = index.search(ccle_data, k)
             tissue_dict[tissue] = distances.ravel()
 
-    # Calculate statistics
-    stats = {
-        'tissue': [],
-        'mean_distance': [],
-        'std_deviation': [],
-        'min_distance': [],
-        'max_distance': [],
-        '25th_percentile': [],
-        'median': [],
-        '75th_percentile': [],
-        'sample_count': []
-    }
+    
+    if return_summary_df:
+    
+        # Calculate statistics
+        stats = {
+            'tissue': [],
+            'mean_distance': [],
+            'std_deviation': [],
+            'min_distance': [],
+            'max_distance': [],
+            '25th_percentile': [],
+            'median': [],
+            '75th_percentile': [],
+            'sample_count': []
+        }
 
-    for tissue, distances in tissue_dict.items():
-        stats['tissue'].append(tissue)
-        stats['mean_distance'].append(np.mean(distances))
-        stats['std_deviation'].append(np.std(distances))
-        stats['min_distance'].append(np.min(distances))
-        stats['max_distance'].append(np.max(distances))
-        stats['25th_percentile'].append(np.percentile(distances, 25))
-        stats['median'].append(np.percentile(distances, 50))
-        stats['75th_percentile'].append(np.percentile(distances, 75))
-        stats['sample_count'].append(len(distances))
+        for tissue, distances in tissue_dict.items():
+            stats['tissue'].append(tissue)
+            stats['mean_distance'].append(np.mean(distances))
+            stats['std_deviation'].append(np.std(distances))
+            stats['min_distance'].append(np.min(distances))
+            stats['max_distance'].append(np.max(distances))
+            stats['25th_percentile'].append(np.percentile(distances, 25))
+            stats['median'].append(np.percentile(distances, 50))
+            stats['75th_percentile'].append(np.percentile(distances, 75))
+            stats['sample_count'].append(len(distances))
 
-    return pd.DataFrame(stats)
+        return pd.DataFrame(stats)
+    
+    else:
+        return tissue_dict
