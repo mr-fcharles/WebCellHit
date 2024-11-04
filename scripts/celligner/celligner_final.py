@@ -33,7 +33,7 @@ if __name__ == '__main__':
     parser.add_argument('--data_path', type=str, default = '~/WebCellHit/data')
     parser.add_argument('--use_external', action='store_true', help='Use external datasets')
     parser.add_argument('--database_path', type=str, default = '~/WebCellHit/database')
-    parser.add_argument('--study_name', type=str, default='celligner_optimize')
+    parser.add_argument('--study_name', type=str, default='celligner_optimize_revised')
     parser.add_argument('--external_dataset', type=str, help='Name of the external dataset')
     parser.add_argument('--gpu_id', type=int, default=0)
 
@@ -41,7 +41,7 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     #expand user in all paths if ~ in path
-    for arg in ['external_dataset']:
+    for arg in ['data_path','database_path']:
         if '~' in args.__dict__[arg]:
             args.__dict__[arg] = args.__dict__[arg].replace('~',os.path.expanduser('~'))
 
@@ -97,12 +97,16 @@ if __name__ == '__main__':
 
     else:
         #load the data and set as index the first column
-        ccle = pd.read_feather(data_path/'ccle_raw.feather').set_index('index')
-        tcga = pd.read_feather(data_path/'tcga_raw.feather').set_index('index')
+        ccle = pd.read_feather(data_path/'transcriptomics'/'ccle_raw.feather').set_index('index')
+        tcga = pd.read_feather(data_path/'transcriptomics'/'tcga_raw.feather').set_index('index')
         tumor_samples = tcga
 
     study = optuna.load_study(study_name=args.study_name,storage=f'sqlite:///{args.database_path}/{args.study_name}.db')
-    trial = study.best_trial
+    trials_df = study.trials_dataframe()
+    trials_df['summary_value'] = trials_df[[i for i in trials_df.columns if 'value' in i]].mean(axis=1)
+    trials_df = trials_df.sort_values(by='summary_value',ascending=True)
+    best_trial_idx = int(trials_df['number'].values[0])
+    trial = study.trials[best_trial_idx]
     best_params = trial.params
 
     #align the data
@@ -121,6 +125,6 @@ if __name__ == '__main__':
         suffix = 'CCLE_TCGA'
 
     #save feather file and base alligner
-    output.to_csv(data_path/'transcriptomics'/f'celligner_{suffix}_optimized.csv')
-    output.reset_index().to_feather(data_path/'transcriptomics'/f'celligner_{suffix}_optimized.feather')
-    my_alligner.save(data_path/'models'/f'base_alligner_{suffix}_optimized.pkl')
+    output.to_csv(data_path/'transcriptomics'/f'celligner_{suffix}_optimized_revised.csv')
+    output.reset_index().to_feather(data_path/'transcriptomics'/f'celligner_{suffix}_optimized_revised.feather')
+    my_alligner.save(data_path/'transcriptomics'/f'base_alligner_{suffix}_optimized_revised.pkl')
