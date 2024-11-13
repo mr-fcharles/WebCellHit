@@ -21,7 +21,7 @@ from AsyncDistribJobs.operations import process_job
 
 def run_full_asynch_inference(args,**kwargs):
 
-    inference_database_path = Path('/home/fcarli/WebCellHit/database/standalone.db')
+    inference_database_path = Path(f'/home/fcarli/WebCellHit/database/standalone_{args["dataset"]}.db')
 
     engine = create_engine(f'sqlite:///{inference_database_path}')
     configure_database(engine,reset=args["build_inference_db"])
@@ -31,35 +31,19 @@ def run_full_asynch_inference(args,**kwargs):
 
         #populate the search database
         loader = DatasetLoader(dataset=args['dataset'],
-                                data_path=args['data_path'],
-                                celligner_output_path=args['celligner_output_path'],
-                                use_external_datasets=True,
-                                samp_x_tissue=2,
-                                random_state=0)
-        
+                    data_path=args['data_path'],
+                            celligner_output_path=args['celligner_output_path'],
+                            use_external_datasets=True,
+                            samp_x_tissue=2,
+                            random_state=0)
+            
         drugs_ids = loader.get_drugs_ids()
-
-        #if dataset is PRISM, inference only on drugs with corr > 0.2
-        if args['dataset'] == 'prism':
-            perfs = pd.read_csv(args['tabs_path']/'drugs_performances_PRISM.tsv',sep='\t')[['DrugID','MOA Corr']]
-            drugs_ids = perfs[perfs['MOA Corr'] >= 0.2]['DrugID'].tolist()
-
-            #TODO: REMEMBER TO REMOVE THIS
-            #remove the ones already present in the direcoe
-            processed = [i.stem for i in Path(results_path).iterdir() if i.suffix == '.csv']
-            processed = set([int(i) for i in processed])
-
-            drugs_ids = [i for i in drugs_ids if i not in processed]
-
-        #for drugID in drugs_ids:
-        #    add_job(payload={'drugID': int(drugID)},cid=f'{drugID}')
 
         jobs_list = [Job(state='pending',payload={'drugID': int(drugID),'dataset':args['dataset']},cid=f'{drugID}') for drugID in drugs_ids]        
         add_jobs(jobs_list)
 
     while len(get_jobs_by_state('pending')) > 0:
         process_job(process_drug,**args)
-
 
 
 def process_drug(drugID, dataset, data_path,**kwargs):
@@ -71,7 +55,7 @@ def process_drug(drugID, dataset, data_path,**kwargs):
     data_path = Path('/home/fcarli/CellHit/data')
 
     #load the best params from previous search
-    model_path = Path('/home/fcarli/CellHit/results/gdsc/search_and_inference/moa_primed/models') / f'{drugID}.pkl'
+    model_path = Path(f'/home/fcarli/CellHit/results/{dataset}/search_and_inference/moa_primed/models') / f'{drugID}.pkl'
 
     with open(model_path, 'rb') as f:
         best_params = pickle.load(f)['best_params']
