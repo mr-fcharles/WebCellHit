@@ -1,8 +1,22 @@
 import pandas as pd
 import numpy as np
 from pathlib import Path
+from typing import Dict, Set
 
-def read_GBM(data_path):
+def read_GBM(data_path: Path) -> pd.DataFrame:
+    """
+    Read and process GBM (Glioblastoma) data from a text file.
+
+    Parameters:
+    -----------
+    data_path : Path
+        Path to the directory containing the GBM.txt file
+
+    Returns:
+    --------
+    pd.DataFrame
+        Processed GBM data with log2-transformed values and FPS_ prefixed sample IDs
+    """
 
     gbm = pd.read_csv(data_path/'GBM.txt', sep='\t').transpose()
     gbm.columns = [i.split('_')[1] for i in gbm.columns]
@@ -20,7 +34,20 @@ def read_GBM(data_path):
 
     return gbm
 
-def read_PDAC(data_path):
+def read_PDAC(data_path: Path) -> pd.DataFrame:
+    """
+    Read and process PDAC (Pancreatic Ductal Adenocarcinoma) data from multiple files.
+
+    Parameters:
+    -----------
+    data_path : Path
+        Path to the directory containing PDAC related files (LMD_RNAseq files and HGNC mapping)
+
+    Returns:
+    --------
+    pd.DataFrame
+        Processed PDAC data with log2-transformed values and IEO_ prefixed sample IDs
+    """
 
     hgncID_to_symbol = pd.read_csv(data_path/'hgncID_to_symbol.tsv', sep='\t')
     hgncID_to_symbol = pd.Series(hgncID_to_symbol['Approved symbol'].values, index=hgncID_to_symbol['HGNC ID']).to_dict()
@@ -52,7 +79,21 @@ def read_PDAC(data_path):
 
     return pdac
 
-def read_OSARC(data_path):
+def read_OSARC(data_path: Path) -> pd.DataFrame:
+    """
+    Read and process OSARC (Osteosarcoma) data from TPM file.
+
+    Parameters:
+    -----------
+    data_path : Path
+        Path to the directory containing the Osteo_tpm.tsv file
+
+    Returns:
+    --------
+    pd.DataFrame
+        Processed osteosarcoma data with log2-transformed values and OSARC_ prefixed sample IDs
+    """
+
     osteo = pd.read_csv(data_path/'Osteo_tpm.tsv', sep='\t',index_col=1)
     osteo = osteo.drop(columns=['genes_id'],axis=1)
     osteo = osteo.transpose()
@@ -71,7 +112,27 @@ def read_OSARC(data_path):
 
     return osteo
 
-def read_external(dataset,data_path):
+def read_external(dataset: str, data_path: Path) -> pd.DataFrame:
+    """
+    Read and process external dataset based on the specified type.
+
+    Parameters:
+    -----------
+    dataset : str
+        Type of dataset to read ('GBM', 'PDAC', or 'OSARC')
+    data_path : Path
+        Path to the directory containing the dataset files
+
+    Returns:
+    --------
+    pd.DataFrame
+        Processed dataset with appropriate transformations
+
+    Raises:
+    -------
+    ValueError
+        If the specified dataset type is not found
+    """
 
     if dataset == 'GBM':
         return read_GBM(data_path)

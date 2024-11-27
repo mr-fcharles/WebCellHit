@@ -5,25 +5,61 @@ import xgboost as xgb
 from xgboost import XGBClassifier
 import optuna
 import numpy as np
+from typing import Dict, List, Optional, Tuple, Union, Any
+import numpy.typing as npt
 
 import argparse
 
 class AutoXGBClassifier:
+    """
+    Automated XGBoost Classifier with hyperparameter optimization using Optuna.
+    This class provides functionality for automated hyperparameter tuning,
+    training, and prediction using XGBoost for classification tasks.
+    """
     
-    def __init__(self, num_parallel_tree=5, gpuID=0, objective_type='multi:softmax',num_classes=None):
-        self.best_params = None
-        self.model = XGBClassifier()
-        self.best_trial = None
-        self.study = None
+    def __init__(self, num_parallel_tree: int = 5, gpuID: int = 0, 
+                 objective_type: str = 'multi:softmax', num_classes: Optional[int] = None) -> None:
+        """
+        Initialize the AutoXGBClassifier.
+
+        Parameters:
+        -----------
+        num_parallel_tree : int, default=5
+            Number of parallel trees to build
+        gpuID : int, default=0
+            GPU device ID to use for training
+        objective_type : str, default='multi:softmax'
+            XGBoost objective function type
+        num_classes : Optional[int], default=None
+            Number of classes for multi-class classification
+        """
+        self.best_params: Optional[Dict[str, Any]] = None
+        self.model: Optional[XGBClassifier] = XGBClassifier()
+        self.best_trial: Optional[optuna.Trial] = None
+        self.study: Optional[optuna.Study] = None
         self.num_parallel_tree = num_parallel_tree
         self.gpuID = gpuID
         self.objective_type = objective_type
         self.num_classes = num_classes
 
-    def objective(self, trial, cv_data=None):
+    def objective(self, trial: optuna.Trial, 
+                 cv_data: List[Tuple[Tuple[pd.DataFrame, pd.DataFrame], 
+                                   Tuple[pd.DataFrame, pd.DataFrame]]]) -> float:
         """
         Objective function for Optuna study.
         Optimizes hyperparameters to minimize the evaluation metric.
+
+        Parameters:
+        -----------
+        trial : optuna.Trial
+            Trial object that suggests hyperparameters
+        cv_data : List[Tuple[Tuple[pd.DataFrame, pd.DataFrame], Tuple[pd.DataFrame, pd.DataFrame]]]
+            Cross-validation data in the format [((train_X, train_Y), (valid_X, valid_Y)), ...]
+
+        Returns:
+        --------
+        float
+            Mean validation score across all folds
         """
         # Define the hyperparameter search space
         params = {
@@ -76,20 +112,30 @@ class AutoXGBClassifier:
         return np.mean(validation_scores)
 
     def search(self, 
-               cv_data=None, 
-               n_trials=300, 
-               n_startup_trials=100,
-               optim_seed=0,
-               storage=None,
-               study_name=None):
+               cv_data: Optional[List[Tuple[Tuple[pd.DataFrame, pd.DataFrame], 
+                                          Tuple[pd.DataFrame, pd.DataFrame]]]] = None,
+               n_trials: int = 300,
+               n_startup_trials: int = 100,
+               optim_seed: int = 0,
+               storage: Optional[str] = None,
+               study_name: Optional[str] = None) -> None:
         """
         Perform hyperparameter search using Optuna.
         
         Parameters:
-        - cv_data: Iterable containing cross-validation splits as ((train_X, train_Y), (valid_X, valid_Y))
-        - n_trials: Total number of trials for the optimization
-        - n_startup_trials: Number of trials for the sampler to run before optimizing
-        - optim_seed: Seed for the sampler for reproducibility
+        -----------
+        cv_data : Optional[List[Tuple[Tuple[pd.DataFrame, pd.DataFrame], Tuple[pd.DataFrame, pd.DataFrame]]]]
+            Cross-validation data in the format [((train_X, train_Y), (valid_X, valid_Y)), ...]
+        n_trials : int, default=300
+            Total number of trials for the optimization
+        n_startup_trials : int, default=100
+            Number of trials for the sampler to run before optimizing
+        optim_seed : int, default=0
+            Seed for the sampler for reproducibility
+        storage : Optional[str], default=None
+            Database URL for storing the optimization history
+        study_name : Optional[str], default=None
+            Name of the study for storing in the database
         """
         
         # Initialize the Optuna sampler
@@ -116,9 +162,19 @@ class AutoXGBClassifier:
         )
         
 
-    def get_best_params(self):
+    def get_best_params(self) -> Dict[str, Any]:
         """
         Retrieve the best hyperparameters found during the search.
+
+        Returns:
+        --------
+        Dict[str, Any]
+            Dictionary containing the best hyperparameters
+
+        Raises:
+        -------
+        ValueError
+            If search has not been conducted yet
         """
         if self.study:
             self.best_params = self.study.best_trial.params
@@ -126,15 +182,24 @@ class AutoXGBClassifier:
         else:
             raise ValueError("Study has not been conducted yet. Call the search method first.")
 
-    def train_final_model(self, X, Y, X_val=None, Y_val=None):
+    def train_final_model(self, 
+                         X: Union[pd.DataFrame, npt.NDArray], 
+                         Y: Union[pd.DataFrame, npt.NDArray],
+                         X_val: Optional[Union[pd.DataFrame, npt.NDArray]] = None,
+                         Y_val: Optional[Union[pd.DataFrame, npt.NDArray]] = None) -> None:
         """
         Train the final XGBClassifier model using the best hyperparameters.
         
         Parameters:
-        - X: Training features
-        - Y: Training labels
-        - X_val: Validation features (optional)
-        - Y_val: Validation labels (optional)
+        -----------
+        X : Union[pd.DataFrame, npt.NDArray]
+            Training features
+        Y : Union[pd.DataFrame, npt.NDArray]
+            Training labels
+        X_val : Optional[Union[pd.DataFrame, npt.NDArray]], default=None
+            Validation features
+        Y_val : Optional[Union[pd.DataFrame, npt.NDArray]], default=None
+            Validation labels
         """
         if self.best_params is None:
             self.get_best_params()
@@ -165,12 +230,19 @@ class AutoXGBClassifier:
             verbose_eval=False
         )
 
-    def save_model(self, filepath):
+    def save_model(self, filepath: str) -> None:
         """
         Save the trained XGBClassifier model to a file.
         
         Parameters:
-        - filepath: Path to save the model
+        -----------
+        filepath : str
+            Path to save the model
+
+        Raises:
+        -------
+        ValueError
+            If model has not been trained yet
         """
         if self.model is None:
             raise ValueError("Model has not been trained yet. Call the train_final_model method first.")
@@ -178,26 +250,37 @@ class AutoXGBClassifier:
         self.model.save_model(filepath)
         print(f"Model saved successfully to {filepath}")
 
-    def load_model(self, filepath):
+    def load_model(self, filepath: str) -> None:
         """
         Load a trained XGBClassifier model from a file.
         
         Parameters:
-        - filepath: Path to the saved model
+        -----------
+        filepath : str
+            Path to the saved model
         """
         self.model = XGBClassifier()
         self.model.load_model(filepath)
         print(f"Model loaded successfully from {filepath}")
 
-    def predict(self, X):
+    def predict(self, X: Union[pd.DataFrame, npt.NDArray]) -> npt.NDArray:
         """
         Make predictions using the trained model.
         
         Parameters:
-        - X: Features to predict
-        
+        -----------
+        X : Union[pd.DataFrame, npt.NDArray]
+            Features to predict
+
         Returns:
-        - Predictions
+        --------
+        npt.NDArray
+            Model predictions
+
+        Raises:
+        -------
+        ValueError
+            If model has not been trained yet
         """
         if not self.ensemble:
             raise ValueError("Model has not been trained yet. Call the train_final_model method first.")
