@@ -14,33 +14,9 @@ import sys
 sys.path.append('/home/fcarli/francisCelligner/celligner')
 from celligner import Celligner
 
-sys.path.append('/home/fcarli/WebCellHit/')
-from WebCellHit.utils import tcgaCodeMap
+from .dataclasses import PreprocessPaths
 
-@dataclass
-class ModelPaths:
-    """Container for model and data file paths
-    
-    Attributes:
-        classifier_path: Path to classifier model
-        classifier_mapper_path: Path to classifier mapper
-        imputer_path: Path to imputer model
-        celligner_path: Path to Celligner model
-        tcga_data_path: Path to TCGA data
-        tcga_metadata_path: Path to TCGA metadata
-        tcga_code_map_path: Path to TCGA code map
-        tcga_project_ids_path: Path to TCGA project ids
-        umap_path: Path to UMAP model
-    """
-    classifier_path: Path
-    classifier_mapper_path: Path 
-    imputer_path: Path
-    celligner_path: Path
-    tcga_data_path: Path
-    tcga_metadata_path: Path
-    tcga_code_map_path: Path
-    tcga_project_ids_path: Path
-    umap_path: Optional[Path] = None
+from ..utils import tcgaCodeMap
 
 def data_frame_completer(
     df: pd.DataFrame, 
@@ -68,21 +44,24 @@ def data_frame_completer(
 
 def classify_samples(
     data: pd.DataFrame,
-    model_paths: ModelPaths
+    preprocess_paths: PreprocessPaths,
+    classifier_path: Optional[Union[Path, str]] = None,
+    classifier_mapper_path: Optional[Union[Path, str]] = None
 ) -> pd.Series:
     """Classify tumor samples using pre-trained classifier
     
     Args:
         data: Input gene expression data
-        model_paths: Paths to required models and data
+        classifier_path: Path to pre-trained classifier
+        preprocess_paths: Paths to required models and data
     
     Returns:
         Series of classified tumor samples
     """
     classifier = xgb.Booster()
-    classifier.load_model(str(model_paths.classifier_path))
+    classifier.load_model(classifier_path or str(preprocess_paths.classifier_path))
     
-    with open(model_paths.classifier_mapper_path) as f:
+    with open(classifier_mapper_path or preprocess_paths.classifier_mapper_path) as f:
         code_mapper = json.load(f)
     reverse_code_mapper = {v: k for k, v in code_mapper.items()}
     
@@ -96,21 +75,26 @@ def classify_samples(
 def batch_correct(
     data: pd.DataFrame,
     covariate_labels: Union[List[int], pd.Series],
-    model_paths: ModelPaths
+    preprocess_paths: PreprocessPaths,
+    tcga_data_path: Optional[Union[Path, str]] = None,
+    tcga_metadata_path: Optional[Union[Path, str]] = None,
+    tcga_code_map_path: Optional[Union[Path, str]] = None
 ) -> pd.DataFrame:
     """Perform batch correction using ComBat
     
     Args:
         data: Input gene expression data
         covariate_labels: Covariate labels for correction
-        model_paths: Paths to required models and data
-    
+        preprocess_paths: Paths to required models and data
+        tcga_data_path: Path to TCGA data
+        tcga_metadata_path: Path to TCGA metadata
+        tcga_code_map_path: Path to TCGA code map
     Returns:
         Batch-corrected gene expression data
     """
     # Load TCGA reference data
-    tcga = pd.read_feather(model_paths.tcga_data_path).set_index('index')
-    tcga_metadata = pd.read_csv(model_paths.tcga_metadata_path)
+    tcga = pd.read_feather(tcga_data_path or preprocess_paths.tcga_data_path).set_index('index')
+    tcga_metadata = pd.read_csv(tcga_metadata_path or preprocess_paths.tcga_metadata_path)
     tcga_metadata_mapper = dict(zip(
         tcga_metadata['sample_id'],
         tcga_metadata['tcga_cancer_acronym']
@@ -121,7 +105,7 @@ def batch_correct(
     tcga = tcga.dropna(subset=['tcga_cancer_acronym'])
 
     #load code map
-    tcga_code_map = tcgaCodeMap.load(model_paths.tcga_code_map_path)
+    tcga_code_map = tcgaCodeMap.load(tcga_code_map_path or preprocess_paths.tcga_code_map_path)
     tcga_covariates = tcga.pop('tcga_cancer_acronym')
     tcga_covariates = tcga_covariates.apply(tcga_code_map.lookup_tcga_code).to_list()
     #tcga = tcga.T
@@ -142,20 +126,25 @@ def batch_correct(
 
 def impute_missing(
     data: pd.DataFrame,
-    model_paths: ModelPaths,
-    covariate_labels: Union[List[int], pd.Series]
+    preprocess_paths: PreprocessPaths,
+    covariate_labels: Union[List[int], pd.Series],
+    imputer_path: Optional[Union[Path, str]] = None,
+    tcga_code_map_path: Optional[Union[Path, str]] = None
 ) -> pd.DataFrame:
     """Impute missing values using pre-trained model
     
     Args:
         data: Input gene expression data
-        model_paths: Paths to required models and data
+        preprocess_paths: Paths to required models and data
         covariate_labels: Covariate labels for correction
+        imputer_path: Path to pre-trained imputer
+        tcga_code_map_path: Path to TCGA code map
+
     Returns:
         Imputed gene expression data
     """
     model = xgb.Booster()
-    model.load_model(str(model_paths.imputer_path))
+    model.load_model(imputer_path or str(preprocess_paths.imputer_path))
     
     #get missing genes
     genes = model.feature_names
@@ -165,7 +154,7 @@ def impute_missing(
     data_completed['tumor_y'] = covariate_labels
 
     #pass back to string since XGBoost expects strings
-    tcga_code_map = tcgaCodeMap.load(model_paths.tcga_code_map_path)
+    tcga_code_map = tcgaCodeMap.load(tcga_code_map_path or preprocess_paths.tcga_code_map_path)
     data_completed['tumor_y'] = data_completed['tumor_y'].apply(tcga_code_map.lookup_integer_code)
     #make tumor_y a categorical variable
     data_completed['tumor_y'] = pd.Categorical(data_completed['tumor_y'],
@@ -192,33 +181,36 @@ def impute_missing(
 
 def celligner_transform_data(
     data: pd.DataFrame,
-    model_paths: ModelPaths,
+    preprocess_paths: PreprocessPaths,
     transform_source: str = 'target',
-    device: str = 'cuda:0'
+    device: str = 'cuda:0',
+    celligner_path: Optional[Union[Path, str]] = None
 ) -> pd.DataFrame:
     """Transform data using Celligner
     
     Args:
         data: Input gene expression data
-        model_paths: Paths to required models and data
+        preprocess_paths: Paths to required models and data
         transform_source: Source of transformation ('target' or 'reference')
         device: Device for Celligner transformation
-    
+        celligner_path: Path to Celligner model
+
     Returns:
         Transformed gene expression data
     """
     celligner = Celligner(device=device)
-    celligner.load(model_paths.celligner_path)
+    celligner.load(celligner_path or preprocess_paths.celligner_path)
     return celligner.transform(data, compute_cPCs=False, transform_source=transform_source)
 
 def preprocess_pipeline(
     data: pd.DataFrame,
     covariate_labels: Union[List[int], pd.Series],
-    model_paths: ModelPaths,
+    preprocess_paths: PreprocessPaths,
     map_umap: bool = False,
     device: str = 'cuda:0',
     classify: bool = True,
-    transform_source: str = 'target'
+    transform_source: str = 'target',
+    umap_path: Optional[Union[Path, str]] = None
 ) -> Dict[str, Union[pd.DataFrame, pd.Series]]:
     """
     Complete preprocess pipeline for gene expression data
@@ -226,11 +218,12 @@ def preprocess_pipeline(
     Args:
         data: Input gene expression data
         covariate_labels: Covariate labels for correction
-        model_paths: Paths to required models and data
+        preprocess_paths: Paths to required models and data
         map_umap: Whether to map data to UMAP space
         device: Device for Celligner transformation
         classify: Whether to classify tumor samples
         transform_source: Source of transformation ('target' or 'reference')
+        umap_path: Path to UMAP model
     Returns:
         Dictionary of results
     """
@@ -239,22 +232,24 @@ def preprocess_pipeline(
 
     # Classification
     if classify:
-        results['classification'] = classify_samples(data, model_paths)
+        results['classification'] = classify_samples(data, preprocess_paths)
     
     # Batch correction
-    corrected = batch_correct(data, covariate_labels, model_paths)
+    corrected = batch_correct(data, covariate_labels, preprocess_paths)
     
     # Imputation
-    imputed = impute_missing(corrected, model_paths, covariate_labels)
+    imputed = impute_missing(corrected, preprocess_paths, covariate_labels)
     
     # Transformation
     transformed = celligner_transform_data(data=imputed, 
-                                 model_paths=model_paths, 
+                                 preprocess_paths=preprocess_paths, 
                                  device=device, 
                                  transform_source=transform_source)
     
-    if map_umap and model_paths.umap_path:
-        umap = ParametricUMAP.load(model_paths.umap_path)
+    umap_path = umap_path or preprocess_paths.umap_path
+    
+    if map_umap and umap_path:
+        umap = ParametricUMAP.load(umap_path)
         embedding = umap.transform(transformed.values)
         
         umap_results = pd.DataFrame(
