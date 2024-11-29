@@ -39,7 +39,9 @@ def compute_model_predictions(
     
     # Load drug stats and metadata
     drug_stats = pd.read_csv(drug_stats_path or inference_paths.drug_stats)
+    min_mapper = dict(zip(drug_stats['Drug'], drug_stats['min']))
     median_mapper = dict(zip(drug_stats['Drug'], drug_stats['median']))
+    max_mapper = dict(zip(drug_stats['Drug'], drug_stats['max']))
     mean_mapper = dict(zip(drug_stats['Drug'], drug_stats['mean']))
     std_mapper = dict(zip(drug_stats['Drug'], drug_stats['std']))
     
@@ -65,7 +67,10 @@ def compute_model_predictions(
             std_mapper=std_mapper,
             drug_id=stem,
             drug_name=name,
-            repurposing_target=repurposing_target
+            repurposing_target=repurposing_target,
+            drug_min=min_mapper[name],
+            drug_median=median_mapper[name],
+            drug_max=max_mapper[name]
         )
         
         preds.append(output)
@@ -250,10 +255,11 @@ def run_full_inference(
     response_neighs_df = compute_neighbors(preds, 'response', inference_paths, ccle_metadata_path, tcga_metadata_path, **kwargs)
     
     # Merge results
-    final_df = pd.merge(preds, transcr_neighs_df, left_on='index', right_on='query_point', how='inner')
-    final_df = pd.merge(final_df, response_neighs_df, left_on='index', right_on='query_point', how='inner')
-    final_df.drop(columns=['query_point_x', 'query_point_y'], inplace=True)
+    #final_df = pd.merge(preds, transcr_neighs_df, left_on='index', right_on='query_point', how='inner')
+    #final_df = pd.merge(final_df, response_neighs_df, left_on='index', right_on='query_point', how='inner')
+    #final_df.drop(columns=['query_point_x', 'query_point_y'], inplace=True)
 
+    output = {}
     
     if return_heatmap:
         # Compute heatmap data
@@ -268,9 +274,22 @@ def run_full_inference(
         for drug in heatmap_data.columns:
             heatmap_data[drug] = heatmap_data[drug] - median_mapper[drug]
             
-        return final_df, heatmap_data
+        output['heatmap_data'] = heatmap_data
     
-    return final_df
+    #Like merging but faster in case of many samples (can be done in case of one-to-one mapping)
+    for col in transcr_neighs_df.columns:
+        if col != 'query_point':
+            temp_mapper = dict(zip(transcr_neighs_df['query_point'],transcr_neighs_df[col]))
+            preds[col] = preds['index'].map(temp_mapper)
+
+    for col in response_neighs_df.columns:
+        if col != 'query_point':
+            temp_mapper = dict(zip(response_neighs_df['query_point'],response_neighs_df[col]))
+            preds[col] = preds['index'].map(temp_mapper)
+
+    output['predictions'] = preds
+    
+    return output
 
 
 def elaborate_output(
@@ -282,6 +301,9 @@ def elaborate_output(
     mean_mapper: Dict[str, float],
     std_mapper: Dict[str, float],
     repurposing_target: str,
+    drug_min: float,
+    drug_median: float,
+    drug_max: float,
     source: Optional[str] = None,
     topk: int = 15
 ) -> pd.DataFrame:
@@ -298,6 +320,9 @@ def elaborate_output(
         mean_mapper: Mean mapper
         std_mapper: Standard deviation mapper
         repurposing_target: Repurposing target
+        drug_min: Drug minimum
+        drug_median: Drug median
+        drug_max: Drug maximum
         source: Source (optional)
         topk: Topk (optional)
         
@@ -329,6 +354,9 @@ def elaborate_output(
     preds_df['index'] = indexes
     preds_df['prediction'] = (preds * std_mapper[drug_name]) + mean_mapper[drug_name]
     preds_df['std'] = stds * std_mapper[drug_name]
+    preds_df['DrugMin'] = [drug_min]*len(indexes)
+    preds_df['DrugMedian'] = [drug_median]*len(indexes)
+    preds_df['DrugMax'] = [drug_max]*len(indexes)
 
     #take topk 15 absolute values for each instance (most important features)
     topk_indexes = np.abs(shaps).argsort(axis=1)[:,-topk:]
@@ -339,10 +367,18 @@ def elaborate_output(
     #transform the bidimensional array into a list of lists
     topk_feature_names = topk_feature_names.tolist()
 
+    #putative target set
+    if (repurposing_target is not None) and (not isinstance(repurposing_target, float)):
+        putative_set = set([i.strip() for i in repurposing_target.split(',')])
+    else:
+        putative_set = set()
+
     #create a new column with the topk feature names
-    preds_df['TopGenes'] = topk_feature_names
-    preds_df['TopGenes'] = preds_df['TopGenes'].apply(lambda x: ','.join(x))
     preds_df['ShapDictionary'] = [dict(zip(topk_feature_names[i], values[i])) for i in range(values.shape[0])]
     preds_df['PutativeTarget'] = [repurposing_target]*len(indexes)
+    preds_df['TopGenes'] = topk_feature_names
+    recovered_targets = [list(set(topk_feature_names[i]) & putative_set) for i in range(len(topk_feature_names))]
+    preds_df['RecoveredTargets'] = [','.join(i) if len(i) > 0 else None for i in recovered_targets]
+    preds_df['TopGenes'] = preds_df['TopGenes'].apply(lambda x: ','.join(x))
 
     return preds_df
