@@ -17,29 +17,31 @@ class PreprocessPaths:
         tcga_project_ids_path: Path to TCGA project ids
         umap_path: Path to UMAP model
     """
-    classifier_path: Union[Path, str]
-    classifier_mapper_path: Union[Path, str] 
-    imputer_path: Union[Path, str]
-    celligner_path: Union[Path, str]
-    tcga_data_path: Union[Path, str]
-    tcga_metadata_path: Union[Path, str]
-    tcga_code_map_path: Union[Path, str]
-    tcga_project_ids_path: Union[Path, str]
+    classifier_path: Union[Path, str] = None
+    classifier_mapper_path: Union[Path, str] = None
+    imputer_path: Union[Path, str] = None
+    celligner_path: Union[Path, str] = None
+    tcga_data_path: Union[Path, str] = None
+    tcga_metadata_path: Union[Path, str] = None
+    tcga_code_map_path: Union[Path, str] = None
+    tcga_project_ids_path: Union[Path, str] = None
     umap_path: Optional[Union[Path, str]] = None
 
     def __post_init__(self):
         """Converts all string paths to Path objects and checks if paths exist."""
         # Check if paths exist
         paths_to_check = [
-            self.classifier_path,
-            self.classifier_mapper_path,
-            self.imputer_path,
-            self.celligner_path,
-            self.tcga_data_path,
-            self.tcga_metadata_path,
-            self.tcga_code_map_path,
-            self.tcga_project_ids_path,
-            self.umap_path
+            path for path in [
+                self.classifier_path,
+                self.classifier_mapper_path,
+                self.imputer_path,
+                self.celligner_path,
+                self.tcga_data_path,
+                self.tcga_metadata_path,
+                self.tcga_code_map_path,
+                self.tcga_project_ids_path,
+                self.umap_path
+            ] if path is not None
         ]
 
         # Convert all string paths to Path objects
@@ -59,45 +61,47 @@ class PreprocessPaths:
 class InferencePaths:
     """Dataclass containing all paths needed for inference. Accepts both Path and string objects, converting strings to Paths in the constructor. Checks if paths exist."""
     # Base paths
-    cellhit_data: Union[Path, str]
+    cellhit_data: Union[Path, str] = None
 
     # Neighbors paths
-    ccle_transcr_neighs: Union[Path, str]
-    tcga_transcr_neighs: Union[Path, str]
-    ccle_response_neighs: Union[Path, str]
-    tcga_response_neighs: Union[Path, str]
+    ccle_transcr_neighs: Union[Path, str] = None
+    tcga_transcr_neighs: Union[Path, str] = None
+    ccle_response_neighs: Union[Path, str] = None
+    tcga_response_neighs: Union[Path, str] = None
     
     # Models paths
-    pretrained_models_path: Union[Path, str]
+    pretrained_models_path: Union[Path, str] = None
 
     # Drug stats path
-    drug_stats: Union[Path, str]
+    drug_stats: Union[Path, str] = None
 
     # Drug metadata path
-    drug_metadata: Union[Path, str]
+    drug_metadata: Union[Path, str] = None
 
     # Quantile computer path
-    quantile_computer: Union[Path, str]
+    quantile_computer: Union[Path, str] = None
 
     # Metadata paths
-    ccle_metadata: Union[Path, str]
-    tcga_metadata: Union[Path, str]
+    ccle_metadata: Union[Path, str] = None
+    tcga_metadata: Union[Path, str] = None
 
     def __post_init__(self):
         """Converts all string paths to Path objects and checks if paths exist."""
         # Check if paths exist
         paths_to_check = [
-            self.cellhit_data,
-            self.ccle_transcr_neighs,
-            self.tcga_transcr_neighs,
-            self.ccle_response_neighs,
-            self.tcga_response_neighs,
-            self.pretrained_models_path,
-            self.drug_stats,
-            self.drug_metadata,
-            self.quantile_computer,
-            self.ccle_metadata,
-            self.tcga_metadata
+            path for path in [
+                self.cellhit_data,
+                self.ccle_transcr_neighs,
+                self.tcga_transcr_neighs,
+                self.ccle_response_neighs,
+                self.tcga_response_neighs,
+                self.pretrained_models_path,
+                self.drug_stats,
+                self.drug_metadata,
+                self.quantile_computer,
+                self.ccle_metadata,
+                self.tcga_metadata
+            ] if path is not None
         ]
 
         # Convert all string paths to Path objects
