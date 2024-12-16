@@ -20,7 +20,8 @@ def compute_model_predictions(
     inference_paths: InferencePaths,
     drug_stats_path: Optional[Union[Path, str]] = None,
     drug_metadata_path: Optional[Union[Path, str]] = None,
-    models_path: Optional[Union[Path, str]] = None
+    models_path: Optional[Union[Path, str]] = None,
+    limit_load: Optional[int] = None
 ) -> pd.DataFrame:
     """
     Compute model predictions for input data using InferencePaths.
@@ -56,7 +57,7 @@ def compute_model_predictions(
         name = id_to_name_mapper[stem]
         repurposing_target = id_to_repurposing_target_mapper[stem]
         
-        model = EnsembleXGBoost.load_model(model_path)
+        model = EnsembleXGBoost.load_model(model_path, limit_load=limit_load)
         predictions = model.predict(tdf, return_shaps=True, return_stds=True)
         
         output = elaborate_output(
