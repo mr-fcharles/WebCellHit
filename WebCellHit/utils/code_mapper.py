@@ -46,3 +46,81 @@ class tcgaCodeMap:
     def load(cls, path: str):
         with open(path, 'rb') as f:
             return pickle.load(f)
+        
+
+    def save_json(self, path: str) -> None:
+        """Save class data as JSON.
+        
+        Args:
+            path: Path to save the JSON file
+        """
+        data = {
+            'tcga_metadata_mapper': self.tcga_metadata_mapper,
+            'project_ids': self.project_ids,
+            'correction_code_mapper': self.correction_code_mapper,
+            'reverse_correction_code_mapper': self.reverse_correction_code_mapper
+        }
+        with open(path, 'w') as f:
+            json.dump(data, f)
+
+    #@classmethod
+    @classmethod
+    def load_json(cls, path: str) -> 'CodeMapper':
+        """Load class from JSON.
+        
+        Args:
+            path: Path to the JSON file
+            
+        Returns:
+            CodeMapper: New instance loaded from JSON
+        """
+        with open(path, 'r') as f:
+            data = json.load(f)
+            
+        instance = cls.__new__(cls)
+        instance.tcga_metadata_mapper = data['tcga_metadata_mapper'] 
+        instance.project_ids = data['project_ids']
+        instance.correction_code_mapper = data['correction_code_mapper']
+        instance.reverse_correction_code_mapper = data['reverse_correction_code_mapper']
+        return instance
+        
+
+class ccleCodeMap:
+    """Class to map CCLE codes to integers and vice versa"""
+    def __init__(self, ccle_data_path: str, ccle_metadata_path: str,tissue_map_path: str):
+        """
+        Args:
+            ccle_data_path: Path to CCLE data
+            ccle_metadata_path: Path to CCLE metadata
+            tissue_map_path: Path to tissue map
+        """
+
+        with open(tissue_map_path, 'r') as f:
+            self.tissue_map = json.load(f)
+
+        self.ccle_metadata = pd.read_csv(ccle_metadata_path).dropna(subset=['OncotreeCode']).sort_values(by='OncotreeCode')
+        self.ccle_metadata['tissue'] = self.ccle_metadata['OncotreeCode'].map(self.tissue_map)
+        self.oncotree_to_tissue_mapper = dict(zip(self.ccle_metadata['OncotreeCode'], self.ccle_metadata['tissue']))
+        self.ccle_metadata = self.ccle_metadata.dropna(subset=['tissue'])
+
+        unique_tissues = sorted(list(self.ccle_metadata['tissue'].unique()))
+        self.reverse_correction_code_mapper = {tissue: i for i, tissue in enumerate(unique_tissues)}
+        self.correction_code_mapper = dict(zip(self.reverse_correction_code_mapper.values(), self.reverse_correction_code_mapper.keys()))
+
+    def lookup_ccle_code(self, code: str) -> int:
+        return self.reverse_correction_code_mapper.get(code, None)
+
+    def lookup_integer_code(self, code: int) -> str:
+        return self.correction_code_mapper.get(code, None)
+
+    def lookup_tissue(self, code: str) -> str:
+        return self.oncotree_to_tissue_mapper.get(code, None)
+
+    def save(self, path: str):
+        with open(path, 'wb') as f:
+            pickle.dump(self, f)
+
+    @classmethod
+    def load(cls, path: str):
+        with open(path, 'rb') as f:
+            return pickle.load(f)

@@ -25,6 +25,9 @@ class PreprocessPaths:
     tcga_metadata_path: Union[Path, str] = None
     tcga_code_map_path: Union[Path, str] = None
     tcga_project_ids_path: Union[Path, str] = None
+    ccle_data_path: Union[Path, str] = None
+    ccle_metadata_path: Union[Path, str] = None
+    ccle_code_map_path: Union[Path, str] = None
     umap_path: Optional[Union[Path, str]] = None
 
     def __post_init__(self):
@@ -40,7 +43,10 @@ class PreprocessPaths:
                 self.tcga_metadata_path,
                 self.tcga_code_map_path,
                 self.tcga_project_ids_path,
-                self.umap_path
+                self.umap_path,
+                self.ccle_data_path,
+                self.ccle_metadata_path,
+                self.ccle_code_map_path
             ] if path is not None
         ]
 

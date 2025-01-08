@@ -16,8 +16,7 @@ from celligner import Celligner
 
 from .dataclasses import PreprocessPaths
 
-from ..utils import tcgaCodeMap
-
+from ..utils import tcgaCodeMap, ccleCodeMap
 def data_frame_completer(
     df: pd.DataFrame, 
     genes: List[str],
@@ -72,15 +71,70 @@ def classify_samples(
     predictions = classifier.predict(dmatrix)
     return pd.Series(predictions, index=data_completed.index).map(reverse_code_mapper)
 
-def batch_correct(
+
+def batch_correct_ccle(
+    data: pd.DataFrame,
+    covariate_labels: Union[List[int], pd.Series],
+    preprocess_paths: PreprocessPaths,
+    ccle_data_path: Optional[Union[Path, str]] = None,
+    ccle_metadata_path: Optional[Union[Path, str]] = None,
+    ccle_code_map_path: Optional[Union[Path, str]] = None,
+    batch_labels: Optional[List[int]] = None,
+) -> pd.DataFrame:
+    
+    """
+    Batch correct CCLE data
+
+    Args:
+        data: Input gene expression data
+        covariate_labels: Covariate labels for correction
+        preprocess_paths: Paths to required models and data
+        ccle_data_path: Path to CCLE data
+        ccle_metadata_path: Path to CCLE metadata
+        batch_labels: List of batch labels, if not none, overrides batch correction (allows multiple batch correction in one go)
+    Returns:
+        Batch-corrected gene expression data
+    """
+
+    ccle_code_map = ccleCodeMap.load(ccle_code_map_path or preprocess_paths.ccle_code_map_path)
+    
+    ccle = pd.read_feather(ccle_data_path or preprocess_paths.ccle_data_path).set_index('index')
+    ccle_metadata = pd.read_csv(ccle_metadata_path or preprocess_paths.ccle_metadata_path).sort_values(by='ModelID')
+    ccle_metadata_mapper = dict(zip(ccle_metadata['ModelID'], ccle_metadata['OncotreeCode']))
+
+    ccle['ccle_cancer_acronym'] = ccle.index.map(ccle_metadata_mapper).map(ccle_code_map.lookup_tissue)
+    ccle = ccle.dropna(subset=['ccle_cancer_acronym'])
+
+    ccle_covariates = ccle.pop('ccle_cancer_acronym')
+    ccle_covariates = ccle_covariates.apply(ccle_code_map.lookup_ccle_code).to_list()
+
+    # Prepare data for correction
+    common_genes = list(set(data.columns).intersection(ccle.columns))
+    data = data[common_genes].T
+    ccle = ccle[common_genes].T
+
+    overall_data = pd.concat([data, ccle], axis=1)
+    if batch_labels is None:
+        batch = [1] * data.shape[1] + [0] * ccle.shape[1]
+    else:
+        batch = batch_labels + [0] * ccle.shape[1] 
+    
+    covariate_labels = covariate_labels + ccle_covariates
+
+    return overall_data, batch, covariate_labels
+
+def batch_correct_tcga(
     data: pd.DataFrame,
     covariate_labels: Union[List[int], pd.Series],
     preprocess_paths: PreprocessPaths,
     tcga_data_path: Optional[Union[Path, str]] = None,
     tcga_metadata_path: Optional[Union[Path, str]] = None,
-    tcga_code_map_path: Optional[Union[Path, str]] = None
+    tcga_code_map_path: Optional[Union[Path, str]] = None,
+    batch_labels: Optional[List[int]] = None,
 ) -> pd.DataFrame:
-    """Perform batch correction using ComBat
+    
+    """
+    Batch correct TCGA data
     
     Args:
         data: Input gene expression data
@@ -89,6 +143,8 @@ def batch_correct(
         tcga_data_path: Path to TCGA data
         tcga_metadata_path: Path to TCGA metadata
         tcga_code_map_path: Path to TCGA code map
+        batch_labels: List of batch labels, if not none, overrides batch correction (allows multiple batch correction in one go)
+        transform_source: Source of transformation ('target' or 'reference')
     Returns:
         Batch-corrected gene expression data
     """
@@ -117,12 +173,70 @@ def batch_correct(
     
     # Combine data
     overall_data = pd.concat([data, tcga], axis=1)
-    batch = [0] * data.shape[1] + [1] * tcga.shape[1]
-    covariate_labels = covariate_labels + tcga_covariates
+    if batch_labels is None:
+        batch = [1] * data.shape[1] + [0] * tcga.shape[1]
+    else:
+        batch = batch_labels + [0] * tcga.shape[1]
     
+    covariate_labels = covariate_labels + tcga_covariates
+
+    return overall_data, batch, covariate_labels
+    
+def batch_correct(
+    data: pd.DataFrame,
+    covariate_labels: Union[List[int], pd.Series],
+    preprocess_paths: PreprocessPaths,
+    tcga_data_path: Optional[Union[Path, str]] = None,
+    tcga_metadata_path: Optional[Union[Path, str]] = None,
+    tcga_code_map_path: Optional[Union[Path, str]] = None,
+    ccle_data_path: Optional[Union[Path, str]] = None,
+    ccle_metadata_path: Optional[Union[Path, str]] = None,
+    ccle_code_map_path: Optional[Union[Path, str]] = None,
+    batch_labels: Optional[List[int]] = None,
+    transform_source: str = 'target'
+) -> pd.DataFrame:
+    """Perform batch correction using ComBat
+    
+    Args:
+        data: Input gene expression data
+        covariate_labels: Covariate labels for correction
+        preprocess_paths: Paths to required models and data
+        tcga_data_path: Path to TCGA data
+        tcga_metadata_path: Path to TCGA metadata
+        tcga_code_map_path: Path to TCGA code map
+        ccle_data_path: Path to CCLE data
+        ccle_metadata_path: Path to CCLE metadata
+        ccle_code_map_path: Path to CCLE code map
+        batch_labels: List of batch labels, if not none, overrides batch correction (allows multiple batch correction in one go)
+        transform_source: Source of transformation ('target' or 'reference')
+    Returns:
+        Batch-corrected gene expression data
+    """
+    # Pre-process data based on transform source
+    if transform_source == 'target':
+        overall_data, batch, covariate_labels = batch_correct_tcga(
+            data=data,
+            covariate_labels=covariate_labels,
+            preprocess_paths=preprocess_paths,
+            tcga_data_path=tcga_data_path,
+            tcga_metadata_path=tcga_metadata_path,
+            tcga_code_map_path=tcga_code_map_path,
+            batch_labels=batch_labels
+        )
+    else:
+        overall_data, batch, covariate_labels = batch_correct_ccle(
+            data=data,
+            covariate_labels=covariate_labels,
+            preprocess_paths=preprocess_paths,
+            ccle_data_path=ccle_data_path,
+            ccle_metadata_path=ccle_metadata_path,
+            ccle_code_map_path=ccle_code_map_path,
+            batch_labels=batch_labels
+        )
+
     # Perform correction
     corrected = pycombat(overall_data, batch, covariate_labels).T
-    return corrected.iloc[:data.shape[1]]
+    return corrected.iloc[:data.shape[0]]
 
 def impute_missing(
     data: pd.DataFrame,
@@ -210,7 +324,8 @@ def preprocess_pipeline(
     device: str = 'cuda:0',
     classify: bool = True,
     transform_source: str = 'target',
-    umap_path: Optional[Union[Path, str]] = None
+    umap_path: Optional[Union[Path, str]] = None,
+    batch_labels: Optional[List[int]] = None
 ) -> Dict[str, Union[pd.DataFrame, pd.Series]]:
     """
     Complete preprocess pipeline for gene expression data
@@ -224,6 +339,7 @@ def preprocess_pipeline(
         classify: Whether to classify tumor samples
         transform_source: Source of transformation ('target' or 'reference')
         umap_path: Path to UMAP model
+        batch_labels: List of batch labels, if not none, overrides batch correction (allows multiple batch correction in one go)
     Returns:
         Dictionary of results
     """
@@ -235,7 +351,7 @@ def preprocess_pipeline(
         results['classification'] = classify_samples(data, preprocess_paths)
     
     # Batch correction
-    corrected = batch_correct(data, covariate_labels, preprocess_paths)
+    corrected = batch_correct(data, covariate_labels, preprocess_paths, batch_labels=batch_labels,transform_source=transform_source)
     
     # Imputation
     imputed = impute_missing(corrected, preprocess_paths, covariate_labels)
@@ -249,7 +365,7 @@ def preprocess_pipeline(
     umap_path = umap_path or preprocess_paths.umap_path
     
     if map_umap and umap_path:
-        umap = ParametricUMAP.load(umap_path)
+        umap = ParametricUMAP.load(umap_path,device=device)
         embedding = umap.transform(transformed.values)
         
         umap_results = pd.DataFrame(
