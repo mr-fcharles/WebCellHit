@@ -85,8 +85,9 @@ def compute_quantile_scores(
     inference_paths: InferencePaths,
     quantile_computer_path: Optional[Union[Path, str]] = None,
     add_new_cells: bool = True,
-    n_jobs: int = 26
-) -> pd.DataFrame:
+    n_jobs: int = 26,
+    return_quantile_computer: bool = False
+) -> Union[pd.DataFrame, Tuple[pd.DataFrame, QuantileScoreComputer]]:
     """
     Compute quantile scores for predictions using InferencePaths.
     
@@ -96,7 +97,7 @@ def compute_quantile_scores(
         quantile_computer_path: Path to quantile computer object (optional)
         add_new_cells: Whether to add new cells to the quantile computer (required when running inference on data different from CCLE or TCGA)
         n_jobs: Number of parallel jobs
-        
+        return_quantile_computer: Whether to return the quantile computer object
     Returns:
         DataFrame with quantile scores added
     """
@@ -114,6 +115,10 @@ def compute_quantile_scores(
         score_col='prediction',
         n_jobs=n_jobs
     )
+    
+    if return_quantile_computer:
+        return preds, quantile_computer
+    
     return preds
 
 def compute_neighbors(
@@ -247,13 +252,43 @@ def run_full_inference(
         If return_heatmap is True, returns tuple of (predictions DataFrame, heatmap DataFrame)
     """
     # Compute transcriptomic neighbors
-    transcr_neighs_df = compute_neighbors(tdf, 'transcriptomic', inference_paths, ccle_metadata_path, tcga_metadata_path, **kwargs)
+    transcr_neighs_df = compute_neighbors(
+        data=tdf,
+        mode='transcriptomic',
+        inference_paths=inference_paths,
+        ccle_metadata_path=ccle_metadata_path,
+        tcga_metadata_path=tcga_metadata_path,
+        **kwargs
+    )
     #compute predictions
-    preds = compute_model_predictions(tdf, dataset, inference_paths, drug_stats_path, drug_metadata_path, models_path, **kwargs)
+    preds = compute_model_predictions(
+        tdf=tdf,
+        dataset=dataset,
+        inference_paths=inference_paths,
+        drug_stats_path=drug_stats_path,
+        drug_metadata_path=drug_metadata_path,
+        models_path=models_path,
+        **kwargs
+    )
     #compute quantile scores
-    preds = compute_quantile_scores(preds, inference_paths, quantile_computer_path, add_new_cells, n_jobs, **kwargs)
+    preds, quantile_computer = compute_quantile_scores(
+        preds=preds,
+        inference_paths=inference_paths,
+        quantile_computer_path=quantile_computer_path,
+        add_new_cells=add_new_cells,
+        n_jobs=n_jobs,
+        return_quantile_computer=True,
+        **kwargs
+    )
     #compute response neighbors
-    response_neighs_df = compute_neighbors(preds, 'response', inference_paths, ccle_metadata_path, tcga_metadata_path, **kwargs)
+    response_neighs_df = compute_neighbors(
+        data=preds,
+        mode='response',
+        inference_paths=inference_paths,
+        ccle_metadata_path=ccle_metadata_path,
+        tcga_metadata_path=tcga_metadata_path,
+        **kwargs
+    )
     
     # Merge results
     #final_df = pd.merge(preds, transcr_neighs_df, left_on='index', right_on='query_point', how='inner')
@@ -261,6 +296,10 @@ def run_full_inference(
     #final_df.drop(columns=['query_point_x', 'query_point_y'], inplace=True)
 
     output = {}
+
+    #save drug and cells distributions for later visualization purposes
+    output['distrib_cells'] = quantile_computer.distrib_cells
+    output['distrib_drugs'] = quantile_computer.distrib_drugs
     
     if return_heatmap:
         # Compute heatmap data
